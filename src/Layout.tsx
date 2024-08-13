@@ -30,7 +30,8 @@ export default function Layout() {
           setCounter,
           Data,
           setData,
-        }}>
+        }}
+      >
         <Routes>
           <Route path="/Cart" element={<Cart />} />
         </Routes>
