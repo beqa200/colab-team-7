@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DataJSON from "./data.json";
 import { DataType, MycontextType } from "./type";
 import Cart from "./components/Cart";
+import Product from "./pages/product";
 
 export const MyContext = createContext<MycontextType>({
   Data: [{}],
@@ -30,9 +31,11 @@ export default function Layout() {
           setCounter,
           Data,
           setData,
-        }}>
+        }}
+      >
         <Routes>
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/product/:id" element={<Product />} />
         </Routes>
       </MyContext.Provider>
     </BrowserRouter>
