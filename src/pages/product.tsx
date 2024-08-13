@@ -3,7 +3,7 @@ import data from "../productData.json";
 // import Footer from "../components/Footer";
 // import Accordion from "../components/Accordion";
 // import NavBar from "../components/NavBar";
-// import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
+import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 // import Stars from "../components/Stars"; // Import the Stars component
 
 export default function Product() {
@@ -23,7 +23,7 @@ export default function Product() {
       <main className="max-w-4xl mx-auto p-6">
         <section className="flex flex-col">
           <aside className="w-full">
-            {/* <GalleryWithPickerZoom images={product.additionalImages} mainImage={product.image} /> */}
+            <GalleryWithPickerZoom images={product.additionalImages} mainImage={product.image} />
           </aside>
 
           <article className="w-full md:pl-6">
