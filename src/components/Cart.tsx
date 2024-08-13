@@ -38,6 +38,7 @@ export default function Cart() {
                   <div className="flex flex-col">
                     <h2 className="text-white">{item.Name}</h2>
                     <span>{item.Price}</span>
+                    <h2>price: {item.Price * Counter}</h2>
                   </div>
                   <div className="bg-[#F1F1F1] flex justify-center items-center">
                     <button
