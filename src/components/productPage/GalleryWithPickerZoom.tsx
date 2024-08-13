@@ -1,26 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import ImageZoom from "react-image-zooom";
 import "./GalleryWithPickerZoom.css";
+import ImageZoom from "react-image-zooom";
 
 interface GalleryWithPickerZoomProps {
   images: string[];
   mainImage: string;
 }
 
-const GalleryWithPickerZoom: React.FC<GalleryWithPickerZoomProps> = ({
-  images,
-  mainImage,
-}) => {
+const GalleryWithPickerZoom: React.FC<GalleryWithPickerZoomProps> = ({ images, mainImage }) => {
   const [galleryImage, setGalleryImage] = useState(mainImage);
   const galleryRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        galleryRef.current &&
-        !galleryRef.current.contains(event.target as Node)
-      ) {
+      if (galleryRef.current && !galleryRef.current.contains(event.target as Node)) {
         setGalleryImage(mainImage);
       }
     };
@@ -44,12 +38,7 @@ const GalleryWithPickerZoom: React.FC<GalleryWithPickerZoomProps> = ({
           onClick={() => handleClick(image)}
         />
       ))}
-      <ImageZoom
-        className="FullImageZoom"
-        src={galleryImage}
-        alt="Zoomed product image"
-        zoom="250"
-      />
+      <ImageZoom className="FullImageZoom" src={galleryImage} alt="Zoomed product image" zoom="250" />
     </div>
   );
 };

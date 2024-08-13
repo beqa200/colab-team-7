@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import data from "../productData.json";
+import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 // import Footer from "../components/Footer";
 // import Accordion from "../components/Accordion";
 // import NavBar from "../components/NavBar";
-import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 // import Stars from "../components/Stars"; // Import the Stars component
 
 export default function Product() {
