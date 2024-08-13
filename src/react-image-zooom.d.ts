@@ -4,7 +4,7 @@ declare module "react-image-zooom" {
   interface ImageZoomProps {
     src: string;
     alt: string;
-    zoom?: number;
+    zoom?: string;
     width?: string;
     height?: string;
     className?: string;
