@@ -44,9 +44,6 @@ const NavBar: React.FC = () => {
                   size={30}
                   direction="right"
                   distance="lg"
-                  // onToggle={(toggled: any) => {
-                  //   setIsOpen(toggled);
-                  // }}
                 />
               </a>
             </li>
