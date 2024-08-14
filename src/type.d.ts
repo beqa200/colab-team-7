@@ -20,5 +20,5 @@ interface ProductItem {
   warranty: string;
   deliveryTime: string;
   stock: string;
-  recently added?: boolean; // Optional property
+  recently_added?: boolean; // Optional property
 }
