@@ -99,7 +99,7 @@ export default function MainPage() {
         <div className="w-full my-20"></div>
         <div className="saleCart">
           {" "}
-          <DiscountedItemsCarousel />{" "}
+          <DiscountedItemsCarousel />
         </div>
         <div className="px-8">
           <NewItemInStock />
