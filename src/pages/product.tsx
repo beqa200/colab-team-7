@@ -22,20 +22,19 @@ export default function Product() {
     <div>
       <NavBar />
 
-      <main className="max-w-4xl mx-auto p-6">
-        <section className="flex flex-col">
-          <aside className="w-full">
+      <main className="max-w-7xl mx-auto p-6 flex-1">
+        <section className="flex flex-col md:flex-row ">
+          <aside className="w-full md:w-[70%] bg-white ">
             <GalleryWithPickerZoom images={product.additionalImages} mainImage={product.image} />
           </aside>
 
-          <article className="w-full md:pl-6">
+          <article className="w-full md:w-[30%] md:pl-6 pt-8">
             <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
             <p className="text-lg mb-4">{product.description}</p>
             <p className="text-xl font-semibold mb-4">{product.price}</p>
             <div className="flex flex-col items-center mb-4">
               <div className="flex items-center">
                 <p className="text-sm text-gray-600 mr-2">Rating:</p>
-                {/* <Stars rating={product.rating} /> */}
                 <p className="text-sm text-gray-600 ml-2">{product.rating} / 5</p>
               </div>
             </div>

@@ -19,11 +19,10 @@ Welcome to the Colab Team 7 project! This repository contains the codebase for o
   import { slide as Menu } from 'react-burger-menu'
   for properties use link above
 
-## Gallery - Material Tailwind
+## React image Zoom ( image picker: )
 
-- https://www.material-tailwind.com/docs/react/gallery
-- npm i @material-tailwind/react
-- TailwindCSS Configurations (see on webpage)
+- npm i react-image-zoom
+- https://mario-duarte.github.io/react-image-zooom/
 
 ## Card
 
