@@ -52,6 +52,26 @@ export default function CategoryCarousel() {
     afterChange: () => {
       setProgress(100);
     },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   useEffect(() => {
@@ -73,7 +93,7 @@ export default function CategoryCarousel() {
   }, []);
 
   return (
-    <div className="relative ">
+    <div className="relative">
       <Slider ref={sliderRef} {...settings}>
         {categories.map((category, index) => (
           <div
@@ -81,17 +101,15 @@ export default function CategoryCarousel() {
             className="relative group category_card"
             onClick={() => navigate(`/${category.alt}`)}
           >
-            {category.isVimeo ? (
-              <div className="relative w-full h-[260px]  overflow-hidden rounded-lg shadow-lg">
+            <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
+              {category.isVimeo ? (
                 <iframe
                   src={`${category.imgSrc}?autoplay=1&loop=1&muted=1&background=1`}
                   className="absolute top-0 left-0 w-full h-full object-cover group-hover:blur-sm"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
                 ></iframe>
-              </div>
-            ) : category.isVideo ? (
-              <div className="relative w-full h-[280px] overflow-hidden rounded-lg shadow-lg">
+              ) : category.isVideo ? (
                 <video
                   src={category.imgSrc}
                   className="absolute top-0 left-0 w-full h-full object-cover group-hover:blur-sm"
@@ -99,14 +117,14 @@ export default function CategoryCarousel() {
                   loop
                   muted
                 />
-              </div>
-            ) : (
-              <img
-                src={category.imgSrc}
-                alt={category.alt}
-                className="w-full h-auto rounded-lg shadow-lg group-hover:blur-sm"
-              />
-            )}
+              ) : (
+                <img
+                  src={category.imgSrc}
+                  alt={category.alt}
+                  className="w-full h-auto rounded-lg shadow-lg group-hover:blur-sm"
+                />
+              )}
+            </div>
             <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-white text-xl font-semibold transition-opacity duration-300">
               {category.alt}
             </span>

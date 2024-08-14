@@ -29,11 +29,11 @@ a {
 }
 
 .slick-dots li button:before {
-  color: rgb(245, 19, 3) !important; /* Color of the inactive dots */
+  color: rgb(27, 3, 245) !important; /* Color of the inactive dots */
 }
 
 .slick-dots li.slick-active button:before {
-  color: #fb0303 !important; /* Color of the active dot */
+  color: #0707e2 !important; /* Color of the active dot */
 }
 .ho {
   background-image: linear-gradient(
@@ -78,8 +78,8 @@ a {
   }
 }
 .newItemDescription {
-  height: 15rem;
-  width: 80%;
+  /* height: 15rem; */
+  /* width: 80%; */
   padding: 2rem;
 }
 @keyframes moveUpDown {
@@ -128,4 +128,57 @@ a {
   .carousel-arrow {
     opacity: 1 !important;
   }
+}
+
+.arrow-link {
+  display: flex;
+  color: #b50a0a;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.arrow-link > .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #b50a0a;
+  border-bottom: 2px solid #b50a0a;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-left: 3px;
+  transition: all 0.3s ease;
+}
+
+.arrow-link > .arrow::before {
+  display: block;
+  background-color: #b50a0a;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-link:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: #b50a0a;
+}
+
+.arrow-link:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-link:hover {
+  color: #f40404;
 }
