@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
-import CategoryCarousel from "../components/CategoryCarousel";
-import Card from "../components/CardCarousel";
+import { useEffect, useRef, useState } from "react";
 import { SpeakerWaveIcon, SpeakerXMarkIcon } from "@heroicons/react/24/solid";
-import NewItemInStock from "../components/NewItemInStock";
+
+import CategoryCarousel from "../components/mainPage/CategoryCarousel";
+// import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
+import NewItemInStock from "../components/mainPage/NewItemInStock";
 
 export default function MainPage() {
   const [isAudioPlaying, setIsAudioPlaying] = useState(true);
@@ -10,45 +11,66 @@ export default function MainPage() {
   const categoriesRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const storedAudioState = localStorage.getItem("isAudioPlaying");
+    if (storedAudioState) {
+      setIsAudioPlaying(JSON.parse(storedAudioState));
+    }
+  }, []);
+
+  useEffect(() => {
     const audioElement = audioRef.current;
 
     if (audioElement) {
-      const playAudio = async () => {
-        try {
-          await audioElement.play();
-          setIsAudioPlaying(true);
-        } catch (error) {
-          console.error("Failed to play audio on mount:", error);
-        }
-      };
-
-      playAudio();
+      if (isAudioPlaying) {
+        const playAudio = async () => {
+          try {
+            await audioElement.play();
+          } catch (error) {
+            console.error("Failed to play audio:", error);
+          }
+        };
+        playAudio();
+      } else {
+        audioElement.pause();
+      }
     }
-  }, []);
+  }, [isAudioPlaying]);
 
   const handleAudioToggle = () => {
     if (audioRef.current) {
       if (isAudioPlaying) {
         audioRef.current.pause();
-        setIsAudioPlaying(false);
       } else {
         audioRef.current.play().catch((error) => {
           console.error("Failed to play audio:", error);
         });
-        setIsAudioPlaying(true);
       }
+      localStorage.setItem("isAudioPlaying", JSON.stringify(!isAudioPlaying));
+      setIsAudioPlaying(!isAudioPlaying);
     }
   };
 
   return (
-    <div className="bg-[white] relative overflow-hidden">
+    <div className="bg-white w-full relative overflow-hidden">
       <div className="relative">
-        <video className="w-full h-[70vh] object-cover" autoPlay loop muted>
-          <source
-            src="/assets/vecteezy_ai-face-artificial-intelligence-network-ai-line-circuit_21922497.mp4"
-            type="video/mp4"
-          />
-        </video>
+        {/* Vimeo video embed */}
+        <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+          <iframe
+            src="https://player.vimeo.com/video/998693391?autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&dnt=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
+            title="Vimeo Video"
+          ></iframe>
+        </div>
+
+        {/* Audio toggle button */}
         <button
           onClick={handleAudioToggle}
           className="absolute top-4 right-4 bg-gray-800 p-2 rounded-full shadow-lg"
@@ -60,8 +82,12 @@ export default function MainPage() {
           )}
         </button>
       </div>
+
       <audio ref={audioRef} style={{ display: "none" }}>
-        <source src="/assets/Orpheus-Male.mp3" type="audio/mp3" />
+        <source
+          src="/assetsForMainPage/audios/Orpheus-Male.mp3"
+          type="audio/mp3"
+        />
         Your browser does not support the audio element.
       </audio>
 
@@ -69,11 +95,9 @@ export default function MainPage() {
         <CategoryCarousel />
       </section>
       <div className="mt-8 px-4">
-        <div className="w-full  my-[5rem]"></div>
-        <div className=" saleCart ">
-          <Card />
-        </div>
-        <div className="px-[2rem]">
+        <div className="w-full my-20"></div>
+        <div className="saleCart">{/* <DiscountedItemsCarousel /> */}</div>
+        <div className="px-8">
           <NewItemInStock />
         </div>
       </div>
