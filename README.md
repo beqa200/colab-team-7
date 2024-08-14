@@ -18,3 +18,14 @@ Welcome to the Colab Team 7 project! This repository contains the codebase for o
   npm install react-burger-menu --save
   import { slide as Menu } from 'react-burger-menu'
   for properties use link above
+
+## Gallery - Material Tailwind
+
+- https://www.material-tailwind.com/docs/react/gallery
+- npm i @material-tailwind/react
+- TailwindCSS Configurations (see on webpage)
+
+## Card
+
+- https://flowbite.com/docs/components/card/
+- E-commerce card #
