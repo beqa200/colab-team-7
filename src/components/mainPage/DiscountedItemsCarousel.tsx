@@ -4,7 +4,6 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../contextApi/Context";
 import { useContext } from "react";
-import Product from "../../pages/product";
 
 export default function DiscountedItemsCarousel() {
   const [itemsPerRow, setItemsPerRow] = useState(4);

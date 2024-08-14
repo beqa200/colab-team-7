@@ -35,6 +35,7 @@ export default function CategoryCarousel() {
   const [progress, setProgress] = useState(100);
   const [isChanging, setIsChanging] = useState(false);
   const sliderRef = useRef<Slider | null>(null);
+  console.log(isChanging);
   const settings = {
     dots: true,
     infinite: true,
@@ -84,8 +85,7 @@ export default function CategoryCarousel() {
                 className="w-full h-[280px] object-cover rounded-lg shadow-lg group-hover:blur-sm"
                 autoPlay
                 loop
-                muted
-              ></video>
+                muted></video>
             ) : (
               <img
                 src={category.imgSrc}
