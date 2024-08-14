@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
-// @ts-ignore
-import ImageZoom from "react-image-zooom";
 import "./GalleryWithPickerZoom.css";
+import ImageZoom from "react-image-zooom";
 
 interface GalleryWithPickerZoomProps {
   images: string[];

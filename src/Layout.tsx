@@ -35,7 +35,9 @@ export default function Layout() {
       >
         <Routes>
           <Route path="/Cart" element={<Cart />} />
-          <Route path="/product/:id" element={<Product />} />
+
+          <Route path="/Product/:id" element={<Product />} />
+
         </Routes>
       </MyContext.Provider>
     </BrowserRouter>
