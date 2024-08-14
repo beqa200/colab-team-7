@@ -1,14 +1,14 @@
-import { Key, useContext } from "react";
-import { DataType, MycontextType } from "../type";
+import { useContext } from "react";
 
 import { Link } from "react-router-dom";
-import { MyContext } from "../contextApi/Context";
+import { MyContext, MycontextType } from "../contextApi/Context";
 
 export default function Cart() {
-  const { Show, setShow, Data, Counter, setCounter } =
-    useContext<MycontextType>(MyContext);
+  const { Show, setShow, Data, Counter, setCounter } = useContext(
+    MyContext
+  ) as MycontextType;
 
-  const Decrement = () => {
+  const decrement = () => {
     if (Counter > 1) {
       setCounter(Counter - 1);
     }
@@ -29,22 +29,23 @@ export default function Cart() {
 
           {Show ? (
             Data.length > 0 ? (
-              Data.map((item: DataType, index: Key | null | undefined) => (
-                <div key={index} className="flex flex-row">
+              Data.map((item: DataType, index: number) => (
+                <div key={index} className="flex flex-row mb-4">
                   <img
                     className="w-[60px] h-[60px] mr-[16px]"
                     src={item.img}
-                    alt=""
+                    alt={item.Name}
                   />
                   <div className="flex flex-col">
                     <h2 className="text-white">{item.Name}</h2>
                     <span>{item.Price}</span>
-                    <h2>price: {item.Price * Counter}</h2>
+                    <h2>Price: {item.Price * Counter}</h2>
                   </div>
                   <div className="bg-[#F1F1F1] flex justify-center items-center">
                     <button
-                      onClick={Decrement}
+                      onClick={decrement}
                       className="w-[16px] opacity-25 mr-[21px]"
+                      aria-label="Decrement"
                     >
                       -
                     </button>
@@ -54,6 +55,7 @@ export default function Cart() {
                     <button
                       onClick={() => setCounter(Counter + 1)}
                       className="w-[16px] opacity-25 ml-[21px] mr-[21px]"
+                      aria-label="Increment"
                     >
                       +
                     </button>
@@ -65,6 +67,7 @@ export default function Cart() {
                       width="24px"
                       height="24px"
                       viewBox="0 0 408.483 408.483"
+                      aria-label="Delete Product"
                     >
                       <g>
                         <g>

@@ -1,5 +1,5 @@
 import { createContext, useState, ReactNode } from "react";
-import { DataType } from "../type";
+
 // Ensure this import is correct for DataType
 
 export interface MycontextType {

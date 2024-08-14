@@ -4,6 +4,7 @@ import { SpeakerWaveIcon, SpeakerXMarkIcon } from "@heroicons/react/24/solid";
 import CategoryCarousel from "../components/mainPage/CategoryCarousel";
 // import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
 import NewItemInStock from "../components/mainPage/NewItemInStock";
+import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
 
 export default function MainPage() {
   const [isAudioPlaying, setIsAudioPlaying] = useState(true);
@@ -96,7 +97,10 @@ export default function MainPage() {
       </section>
       <div className="mt-8 px-4">
         <div className="w-full my-20"></div>
-        <div className="saleCart">{/* <DiscountedItemsCarousel /> */}</div>
+        <div className="saleCart">
+          {" "}
+          <DiscountedItemsCarousel />{" "}
+        </div>
         <div className="px-8">
           <NewItemInStock />
         </div>
