@@ -23,9 +23,11 @@ export default function Product() {
       <main className="max-w-4xl mx-auto p-6">
         <section className="flex flex-col">
           <aside className="w-full">
-            <GalleryWithPickerZoom images={product.additionalImages} mainImage={product.image} />
+            <GalleryWithPickerZoom
+              images={product.additionalImages}
+              mainImage={product.image}
+            />
           </aside>
-
           <article className="w-full md:pl-6">
             <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
             <p className="text-lg mb-4">{product.description}</p>
@@ -34,7 +36,9 @@ export default function Product() {
               <div className="flex items-center">
                 <p className="text-sm text-gray-600 mr-2">Rating:</p>
                 {/* <Stars rating={product.rating} /> */}
-                <p className="text-sm text-gray-600 ml-2">{product.rating} / 5</p>
+                <p className="text-sm text-gray-600 ml-2">
+                  {product.rating} / 5
+                </p>
               </div>
             </div>
             <p className="text-sm text-gray-600">Reviews: {product.reviews}</p>

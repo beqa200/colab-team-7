@@ -35,7 +35,6 @@ export default function CategoryCarousel() {
   const [progress, setProgress] = useState(100);
   const [isChanging, setIsChanging] = useState(false);
   const sliderRef = useRef<Slider | null>(null);
-  console.log(isChanging);
   const settings = {
     dots: true,
     infinite: true,

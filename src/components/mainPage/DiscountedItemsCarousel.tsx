@@ -2,13 +2,30 @@ import { useState, useEffect } from "react";
 import Data from "../../data.json";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { MyContext } from "../../contextApi/Context";
+import { useContext } from "react";
+import Product from "../../pages/product";
 
 export default function DiscountedItemsCarousel() {
   const [itemsPerRow, setItemsPerRow] = useState(4);
   const [rowsPerView, setRowsPerView] = useState(2);
   const [currentRow, setCurrentRow] = useState(0);
+  const [prodcutCopy, setProdcutCopy] = useState(Data.products);
+  const { selecetedCategory } = useContext(MyContext);
   const navigate = useNavigate();
-
+  useEffect(() => {
+    if (selecetedCategory === null) {
+      setProdcutCopy(Data.products);
+    } else {
+      const filterdProduct = Data.products.filter((item) => {
+        return (
+          item.category.toLowerCase().trim() ===
+          selecetedCategory.toLowerCase().trim()
+        );
+      });
+      setProdcutCopy(filterdProduct);
+    }
+  }, [selecetedCategory]);
   const updateItemsPerRow = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 1024) {
@@ -43,10 +60,10 @@ export default function DiscountedItemsCarousel() {
   const getVisibleItems = () => {
     const startIndex = currentRow * itemsPerRow * rowsPerView;
     const endIndex = Math.min(
-      startIndex + itemsPerRow * rowsPerView,
+      +startIndex + itemsPerRow * rowsPerView,
       totalItems
     );
-    return Data.products.slice(startIndex, endIndex);
+    return prodcutCopy.slice(startIndex, endIndex);
   };
 
   const shouldShowPrev = currentRow > 0;
@@ -57,7 +74,7 @@ export default function DiscountedItemsCarousel() {
   const handleCardClick = (category: string, productId: string) => {
     navigate(`/${category}/${productId}`);
   };
-
+  console.log(prodcutCopy);
   return (
     <div className="relative flex justify-center items-center overflow-hidden">
       <button
@@ -65,8 +82,7 @@ export default function DiscountedItemsCarousel() {
         className={`carousel-arrow left transform -translate-y-1/2 bg-[#353333] text-white p-2 rounded-full shadow-lg hover:text-blue-600 transition mx-2 z-10 ${
           shouldShowPrev ? "opacity-100" : "opacity-0"
         }`}
-        disabled={!shouldShowPrev}
-      >
+        disabled={!shouldShowPrev}>
         <LeftOutlined />
       </button>
 
@@ -76,8 +92,7 @@ export default function DiscountedItemsCarousel() {
           style={{
             gridTemplateRows: `repeat(${rowsPerView}, 1fr)`,
             gridTemplateColumns: `repeat(${itemsPerRow}, 1fr)`,
-          }}
-        >
+          }}>
           {visibleItems.map((item, index) => (
             <div
               key={index}
@@ -86,8 +101,7 @@ export default function DiscountedItemsCarousel() {
             >
               <a
                 className="relative flex sm:h-[600px] md:h-[200px] rounded-xl overflow-hidden"
-                href="#"
-              >
+                href="#">
                 <img
                   className="object-cover w-full"
                   src={item.image}
@@ -120,8 +134,7 @@ export default function DiscountedItemsCarousel() {
                         className="h-5 w-5 text-yellow-300"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                       </svg>
                     ))}
@@ -132,16 +145,14 @@ export default function DiscountedItemsCarousel() {
                 </div>
                 <a
                   href="#"
-                  className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 lg:px-6 lg:py-3 md:px-5 md:py-2.5 sm:px-4 sm:py-2.5"
-                >
+                  className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 lg:px-6 lg:py-3 md:px-5 md:py-2.5 sm:px-4 sm:py-2.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="mr-2 h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth="2"
-                  >
+                    strokeWidth="2">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -161,8 +172,7 @@ export default function DiscountedItemsCarousel() {
         className={`carousel-arrow right bg-[#353333] transform -translate-y-1/2 duration-700 ease-in-out text-white p-2 rounded-full shadow-lg hover:text-blue-600 transition mx-2 z-10 ${
           shouldShowNext ? "opacity-100" : "opacity-0"
         }`}
-        disabled={!shouldShowNext}
-      >
+        disabled={!shouldShowNext}>
         <RightOutlined />
       </button>
     </div>

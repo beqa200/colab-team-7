@@ -22,3 +22,7 @@ interface ProductItem {
   stock: string;
   recently_added?: boolean; // Optional property
 }
+interface CategoryType {
+  selecetedCategory: null | string;
+  setselecetedCategory: React.Dispatch<React.SetStateAction<string | null>>;
+}
