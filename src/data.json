@@ -1,8 +1,264 @@
-[
-  {
-    "Name": "Iphone 14 Pro Max",
-    "Price": 2299,
-    "Storage": "128GB",
-    "img": "https://cdn.dxomark.com/wp-content/uploads/medias/post-125834/Apple-iPhone-14_FINAL_featured-image-packshot-review.jpg"
-  }
-]
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 2,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 3,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 4,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series, ",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 5,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series,",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 6,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 7,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 8,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 9,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 10,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 11,
+      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Smartphones",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "false"
+    },
+    {
+      "id": 12,
+      "image": "/assetsForMainPage/441b7509d792cba6bcc8f150270856be.png",
+      "title": "Creative mobile Series",
+      "rating": 4.5,
+      "price": "699",
+      "reviews": 120,
+      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
+      "category": "Case",
+      "discount": "500",
+      "additionalImages": [
+        "/images/smartphone_aluminium_starlight_back.jpeg",
+        "/images/smartphone_aluminium_starlight_side.jpeg",
+        "/images/smartphone_aluminium_starlight_angle.jpeg"
+      ],
+      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recently_added": "true"
+    }
+  ],
+  "categories": [
+    "Key Board",
+    "Mouse",
+    "Monitor",
+    "CPU Coolers",
+    "Case",
+    "Head phones"
+  ]
+}

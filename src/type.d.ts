@@ -4,11 +4,21 @@ type DataType = {
   Storage: string;
   img: string;
 };
-export interface MycontextType {
-  Show: boolean;
-  setShow: React.Dispatch<React.SetStateAction<boolean>>;
-  Counter: number;
-  setCounter: React.Dispatch<React.SetStateAction<number>>;
-  Data: array;
-  setData: React.Dispatch<React.SetStateAction<DataType[]>>;
+
+interface ProductItem {
+  id: number;
+  image: string;
+  title: string;
+  rating: number;
+  price: string;
+  reviews: number;
+  description: string;
+  category: string;
+  discount: string;
+  additionalImages: string[];
+  colorOptions: string[];
+  warranty: string;
+  deliveryTime: string;
+  stock: string;
+  recently_added?: boolean; // Optional property
 }

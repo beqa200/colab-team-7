@@ -1,0 +1,43 @@
+#root {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  margin: 60px auto;
+  padding: 20px;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .img1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .img2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .img3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .FullImageZoom {
+    width: 100%;
+    grid-area: 1 / 2 / 4 / 5;
+  }
+}
