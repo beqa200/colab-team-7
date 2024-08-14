@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { stack as Menu } from "react-burger-menu"; // Use bubble type menu
 import "./NavBar.css"; // Import styles for react-burger-menu
+
 import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
@@ -43,9 +44,9 @@ const NavBar: React.FC = () => {
                   size={30}
                   direction="right"
                   distance="lg"
-                  onToggle={(toggled) => {
-                    setIsOpen(toggled);
-                  }}
+                  // onToggle={(toggled: any) => {
+                  //   setIsOpen(toggled);
+                  // }}
                 />
               </a>
             </li>

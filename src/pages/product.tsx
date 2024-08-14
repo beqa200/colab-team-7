@@ -1,9 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../productData.json";
-import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 // import Footer from "../components/Footer";
 // import Accordion from "../components/Accordion";
-
 
 import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 import NavBar from "../components/productPage/NavBar";
