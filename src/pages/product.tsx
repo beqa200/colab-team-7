@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom";
 import data from "../productData.json";
 // import Footer from "../components/Footer";
 // import Accordion from "../components/Accordion";
-// import NavBar from "../components/NavBar";
+
 import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
+import NavBar from "../components/productPage/NavBar";
 // import Stars from "../components/Stars"; // Import the Stars component
 
 export default function Product() {
@@ -18,7 +19,7 @@ export default function Product() {
 
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
 
       <main className="max-w-4xl mx-auto p-6">
         <section className="flex flex-col">
