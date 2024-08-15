@@ -12,7 +12,7 @@
 .gallery {
   position: relative;
   width: 100%;
-  background-color: #ddd;
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -24,6 +24,8 @@
   img {
     width: 100%;
     cursor: pointer;
+
+    background-color: #fff;
   }
 
   .img1 {

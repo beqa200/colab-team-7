@@ -5,7 +5,8 @@ type DataType = {
   img: string;
 };
 
-interface ProductItem {
+// productData
+export interface Product {
   id: number;
   image: string;
   title: string;
@@ -20,7 +21,17 @@ interface ProductItem {
   warranty: string;
   deliveryTime: string;
   stock: string;
-  "recently added"?: boolean; // Optional property
+  recentlyAdded: boolean;
+}
+
+export interface MycontextType {
+  Show: boolean;
+  setShow: React.Dispatch<React.SetStateAction<boolean>>;
+  Counter: number;
+  setCounter: React.Dispatch<React.SetStateAction<number>>;
+  Data: array;
+  setData: React.Dispatch<React.SetStateAction<DataType[]>>;
+  recently_added?: boolean; // Optional property
 }
 interface CategoryType {
   selecetedCategory: null | string;
