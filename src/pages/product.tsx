@@ -5,8 +5,7 @@ import data from "../productData.json";
 
 import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 import NavBar from "../components/productPage/NavBar";
-
-// import Stars from "../components/Stars"; // Import the Stars component
+import Stars from "../components/productPage/Stars";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>(); // Get the product ID from the URL
@@ -31,10 +30,11 @@ export default function Product() {
           <article className="w-full md:w-[30%] md:pl-6 pt-8">
             <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
             <p className="text-lg mb-4">{product.description}</p>
-            <p className="text-xl font-semibold mb-4">{product.price}</p>
-            <div className="flex flex-col items-center mb-4">
+            <p className="text-xl font-semibold mb-4">${product.price}</p>
+            <div className="flex flex-col items-start mb-4">
               <div className="flex items-center">
                 <p className="text-sm text-gray-600 mr-2">Rating:</p>
+                <Stars rating={product.rating} />
                 <p className="text-sm text-gray-600 ml-2">{product.rating} / 5</p>
               </div>
             </div>
