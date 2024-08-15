@@ -1,3 +1,184 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+body {
+}
+* {
+  font-family: "Fira Code", monospace;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer !important;
+}
+
+.category-item-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 14.08px;
+  position: relative;
+}
+
+.slick-dots li button:before {
+  color: rgb(27, 3, 245) !important; /* Color of the inactive dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0707e2 !important; /* Color of the active dot */
+}
+.ho {
+  background-image: linear-gradient(
+    -225deg,
+    #473b7b 0%,
+    #3584a7 51%,
+    #30d2be 100%
+  );
+}
+.card {
+  border: 1px solid #1e2d3d;
+}
+.category_card {
+  border: 1px solid #1e2d3d;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+.magnifier {
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.newItemInStock {
+  border: 1px solid #1e2d3d;
+  background: linear-gradient(
+    to left,
+    rgb(102, 103, 107),
+    rgb(80, 81, 84) 40%,
+    rgb(60, 61, 63) 70%,
+    rgb(50, 50, 52)
+  );
+
+  border-radius: 8px;
+}
+.NewItemImage {
+  width: 600px !important;
+  animation: moveUpDown 2.1s ease-in-out infinite;
+  transition: width 1s ease-in-out;
+
+  @media screen and (max-width: 600px) {
+    width: 400px !important;
+  }
+}
+.newItemDescription {
+  /* height: 15rem; */
+  /* width: 80%; */
+  padding: 2rem;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+.saleCart {
+  background-image: url("public/assets/1000_F_230621181_lQYljKe9i1WCRSjqc7t5z8D1evIb46xg.png");
+  background-position: center;
+
+  background-size: contain;
+}
+.iaMfJy {
+  background-color: transparent !important;
+}
+
+.carousel-arrow {
+  @media screen and (max-width: 700px) {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.carousel-arrow.left {
+  @media screen and (max-width: 700px) {
+    left: 1rem;
+  }
+}
+
+.carousel-arrow.right {
+  @media screen and (max-width: 700px) {
+    right: 1rem;
+  }
+}
+
+.carousel-arrow:hover {
+  color: #3b82f6;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-arrow {
+    opacity: 1 !important;
+  }
+}
+
+.arrow-link {
+  display: flex;
+  color: #b50a0a;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.arrow-link > .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #b50a0a;
+  border-bottom: 2px solid #b50a0a;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-left: 3px;
+  transition: all 0.3s ease;
+}
+
+.arrow-link > .arrow::before {
+  display: block;
+  background-color: #b50a0a;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-link:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: #b50a0a;
+}
+
+.arrow-link:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-link:hover {
+  color: #f40404;
+}

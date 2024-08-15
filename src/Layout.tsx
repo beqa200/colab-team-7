@@ -1,26 +1,6 @@
-import { useState, createContext } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import DataJSON from "./data.json";
-import { DataType, MycontextType } from "./type";
-import Cart from "./components/Cart";
-import Product from "./pages/product";
-
-export const MyContext = createContext<MycontextType>({
-  Data: [{}],
-  setData: () => {},
-  Counter: 1,
-  setCounter: () => {},
-  Show: false,
-  setShow: () => {},
-});
+import { Outlet } from "react-router-dom";
 
 export default function Layout() {
-  const [Data, setData] = useState<DataType[]>(DataJSON);
-  const [Counter, setCounter] = useState<number>(1);
-  const [Show, setShow] = useState<boolean>(true);
-
-  console.log(Data);
   return (
     <BrowserRouter>
       <MyContext.Provider

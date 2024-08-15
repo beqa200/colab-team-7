@@ -4,6 +4,7 @@ type DataType = {
   Storage: string;
   img: string;
 };
+
 // productData
 export interface Product {
   id: number;
@@ -30,4 +31,5 @@ export interface MycontextType {
   setCounter: React.Dispatch<React.SetStateAction<number>>;
   Data: array;
   setData: React.Dispatch<React.SetStateAction<DataType[]>>;
+  recently_added?: boolean; // Optional property
 }
