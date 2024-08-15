@@ -3,6 +3,7 @@ import HeaderComponent from "./components/mainPage/Header";
 
 export default function Layout() {
   return (
+
     <>
       <header className="w-full absolute z-50">
         <HeaderComponent />
@@ -10,5 +11,6 @@ export default function Layout() {
       <Outlet />
       <footer></footer>
     </>
+
   );
 }
