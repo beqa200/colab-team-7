@@ -4,112 +4,146 @@
     "image": "/images/smartphone_aluminium_starlight.jpeg",
     "title": "Creative mobile Series, Aluminium Case, Starlight Sport",
     "rating": 4.5,
-    "price": "$699",
+    "price": "699",
     "reviews": 120,
     "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
     "category": "Smartphones",
-    "discount": "true",
+    "discount": "500",
     "additionalImages": [
       "/images/smartphone_aluminium_starlight_back.jpeg",
       "/images/smartphone_aluminium_starlight_side.jpeg",
       "/images/smartphone_aluminium_starlight_angle.jpeg"
-    ]
+    ],
+    "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
+    "warranty": "2 years",
+    "deliveryTime": "3-5 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "true"
   },
-
   {
     "id": 2,
     "image": "/images/smart_watch_carbon_fiber.jpeg",
     "title": "Innovative Smart Watch, Carbon Fiber Design",
     "rating": 4.0,
-    "price": "$499",
+    "price": "499",
     "reviews": 98,
     "description": "This innovative smart watch with a carbon fiber design offers style and functionality in one. Equipped with advanced fitness tracking, notifications, and customizable watch faces, it’s perfect for the tech-savvy individual.",
     "category": "Wearables",
-    "discount": "false",
+    "discount": "0",
     "additionalImages": [
       "/images/smart_watch_carbon_fiber_side.jpeg",
       "/images/smart_watch_carbon_fiber_angle.jpeg",
       "/images/smart_watch_carbon_fiber_back.jpeg"
-    ]
+    ],
+    "colorOptions": ["Black", "Gray", "Silver"],
+    "warranty": "1 year",
+    "deliveryTime": "2-4 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "false"
   },
   {
     "id": 3,
     "image": "/images/gaming_console_4k.jpeg",
     "title": "Next-gen Gaming Console, 4K Resolution",
     "rating": 4.8,
-    "price": "$399",
+    "price": "399",
     "reviews": 220,
     "description": "Experience immersive gaming with the next-gen gaming console that supports 4K resolution. With powerful hardware, a vast library of games, and seamless online connectivity, this console is designed for serious gamers.",
     "category": "Gaming",
-    "discount": "true",
+    "discount": "100",
     "additionalImages": [
       "/images/gaming_console_4k_side.jpeg",
       "/images/gaming_console_4k_angle.jpeg",
       "/images/gaming_console_4k_back.jpeg"
-    ]
+    ],
+    "colorOptions": ["Black", "White"],
+    "warranty": "3 years",
+    "deliveryTime": "1-3 business days",
+    "stock": "Limited Stock",
+    "recentlyAdded": "true"
   },
   {
     "id": 4,
     "image": "/images/drone_1080p_camera.jpeg",
     "title": "Advanced Drone with 1080p Camera",
     "rating": 4.3,
-    "price": "$299",
+    "price": "299",
     "reviews": 150,
     "description": "Capture stunning aerial footage with this advanced drone equipped with a 1080p camera. It offers a stable flight, easy controls, and various shooting modes for both hobbyists and professionals.",
     "category": "Drones",
-    "discount": "true",
+    "discount": "100",
     "additionalImages": [
       "/images/drone_1080p_camera_side.jpeg",
       "/images/drone_1080p_camera_angle.jpeg",
       "/images/drone_1080p_camera_back.jpeg"
-    ]
+    ],
+    "colorOptions": ["Gray", "White", "Black"],
+    "warranty": "2 years",
+    "deliveryTime": "2-5 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "true"
   },
   {
     "id": 5,
     "image": "/images/wireless_earbuds_noise_cancellation.jpeg",
     "title": "Wireless Earbuds with Noise Cancellation",
     "rating": 4.7,
-    "price": "$199",
+    "price": "199",
     "reviews": 180,
     "description": "Enjoy crystal-clear sound and immersive audio with these wireless earbuds featuring active noise cancellation. Perfect for on-the-go listening, they offer a comfortable fit and long battery life.",
     "category": "Audio",
-    "discount": "false",
+    "discount": "0",
     "additionalImages": [
       "/images/wireless_earbuds_noise_cancellation_case.jpeg",
       "/images/wireless_earbuds_noise_cancellation_side.jpeg",
       "/images/wireless_earbuds_noise_cancellation_angle.jpeg"
-    ]
+    ],
+    "colorOptions": ["Black", "White", "Gray"],
+    "warranty": "1 year",
+    "deliveryTime": "1-3 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "false"
   },
   {
     "id": 6,
     "image": "/images/smart_home_speaker_voice_assistant.jpeg",
     "title": "Smart Home Speaker, Voice Assistant",
     "rating": 4.6,
-    "price": "$129",
+    "price": "129",
     "reviews": 205,
     "description": "Control your smart home with ease using this voice assistant-enabled smart speaker. It offers superior sound quality and integrates seamlessly with your home automation system.",
     "category": "Smart Home",
-    "discount": "true",
+    "discount": "50",
     "additionalImages": [
       "/images/smart_home_speaker_voice_assistant_side.jpeg",
       "/images/smart_home_speaker_voice_assistant_angle.jpeg",
       "/images/smart_home_speaker_voice_assistant_back.jpeg"
-    ]
+    ],
+    "colorOptions": ["Black", "White"],
+    "warranty": "2 years",
+    "deliveryTime": "3-5 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "true"
   },
   {
     "id": 7,
     "image": "/images/mx-mechanical-mini-keyboard-top-side-view-graphite-us.webp",
     "title": "MX Mechanical Mini Keyboard, Graphite",
     "rating": 4.8,
-    "price": "$99",
+    "price": "99",
     "reviews": 185,
     "description": "The MX Mechanical Mini Keyboard in Graphite offers a compact and responsive typing experience with tactile feedback. Designed for productivity and portability, this keyboard features customizable keys, low-profile mechanical switches, and a sleek, minimalist design.",
     "category": "Peripherals",
-    "discount": "true",
+    "discount": "0",
     "additionalImages": [
       "/images/mx-mechanical-mini-keyboard-3qtr-graphite-us.webp",
       "/images/mx-mechanical-mini-mini-keyboard-top-view-graphite-us.webp",
       "/images/mx-mechanical-keyboard-profile-clicky-graphite.webp"
-    ]
+    ],
+    "colorOptions": ["Graphite", "Silver"],
+    "warranty": "1 year",
+    "deliveryTime": "2-4 business days",
+    "stock": "In Stock",
+    "recentlyAdded": "false"
   }
 ]
