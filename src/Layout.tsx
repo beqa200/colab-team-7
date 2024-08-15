@@ -1,25 +1,16 @@
 import { Outlet } from "react-router-dom";
+import HeaderComponent from "./components/mainPage/Header";
 
 export default function Layout() {
   return (
-    <BrowserRouter>
-      <MyContext.Provider
-        value={{
-          Show,
-          setShow,
-          Counter,
-          setCounter,
-          Data,
-          setData,
-        }}
-      >
-        <Routes>
-          <Route path="/Cart" element={<Cart />} />
 
-          <Route path="/Product/:id" element={<Product />} />
+    <>
+      <header className="w-full absolute z-50">
+        <HeaderComponent />
+      </header>
+      <Outlet />
+      <footer></footer>
+    </>
 
-        </Routes>
-      </MyContext.Provider>
-    </BrowserRouter>
   );
 }
