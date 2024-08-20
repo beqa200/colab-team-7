@@ -68,12 +68,12 @@ export default function MainPage() {
               width: "100%",
               height: "100%",
             }}
-            title="Vimeo Video"></iframe>
+            title="Vimeo Video"
+          ></iframe>
         </div>
 
         {/* Audio toggle button */}
-        <button
-          onClick={handleAudioToggle}
+        <button onClick={handleAudioToggle}>
           {isAudioPlaying ? (
             <SpeakerWaveIcon className="w-6 h-6 text-white" />
           ) : (
@@ -83,10 +83,7 @@ export default function MainPage() {
       </div>
 
       <audio ref={audioRef} style={{ display: "none" }}>
-        <source
-          src="/assetsForMainPage/audios/Orpheus-Male.mp3"
-          type="audio/mp3"
-        />
+        <source src="/assetsForMainPage/audios/Orpheus-Male.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
       <Category />
