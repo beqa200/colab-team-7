@@ -5,6 +5,7 @@ import CategoryCarousel from "../components/mainPage/CategoryCarousel";
 // import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
 import NewItemInStock from "../components/mainPage/NewItemInStock";
 import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
+import Category from "../components/productPage/Category";
 
 export default function MainPage() {
   const [isAudioPlaying, setIsAudioPlaying] = useState(true);
@@ -72,10 +73,7 @@ export default function MainPage() {
         </div>
 
         {/* Audio toggle button */}
-        <button
-          onClick={handleAudioToggle}
-          className="absolute top-4 right-4 bg-gray-800 p-2 rounded-full shadow-lg"
-        >
+        <button onClick={handleAudioToggle}>
           {isAudioPlaying ? (
             <SpeakerWaveIcon className="w-6 h-6 text-white" />
           ) : (
@@ -85,13 +83,10 @@ export default function MainPage() {
       </div>
 
       <audio ref={audioRef} style={{ display: "none" }}>
-        <source
-          src="/assetsForMainPage/audios/Orpheus-Male.mp3"
-          type="audio/mp3"
-        />
+        <source src="/assetsForMainPage/audios/Orpheus-Male.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
-
+      <Category />
       <section ref={categoriesRef} className="categories_Section">
         <CategoryCarousel />
       </section>
