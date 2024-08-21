@@ -96,11 +96,7 @@ export default function CategoryCarousel() {
     <div className="relative">
       <Slider ref={sliderRef} {...settings}>
         {categories.map((category, index) => (
-          <div
-            key={index}
-            className="relative group category_card"
-            onClick={() => navigate(`/${category.alt}`)}
-          >
+          <div key={index} className="relative group category_card" onClick={() => navigate(`/${category.alt}`)}>
             <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
               {category.isVimeo ? (
                 <iframe

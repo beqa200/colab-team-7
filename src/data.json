@@ -19,7 +19,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 2,
@@ -40,7 +40,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 3,
@@ -61,7 +61,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 4,
@@ -82,7 +82,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 5,
@@ -103,7 +103,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 6,
@@ -124,7 +124,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 7,
@@ -145,7 +145,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 8,
@@ -166,7 +166,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 9,
@@ -187,7 +187,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 10,
@@ -208,7 +208,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 11,
@@ -229,7 +229,7 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "false"
+      "recentlyAdded": "false"
     },
     {
       "id": 12,
@@ -250,15 +250,8 @@
       "warranty": "2 years",
       "deliveryTime": "3-5 business days",
       "stock": "In Stock",
-      "recently_added": "true"
+      "recentlyAdded": "true"
     }
   ],
-  "categories": [
-    "Key Board",
-    "Mouse",
-    "Monitor",
-    "CPU Coolers",
-    "Case",
-    "Head phones"
-  ]
+  "categories": ["Key Board", "Mouse", "Monitor", "CPU Coolers", "Case", "Head phones"]
 }

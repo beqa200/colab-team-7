@@ -31,5 +31,12 @@ export interface MycontextType {
   setCounter: React.Dispatch<React.SetStateAction<number>>;
   Data: array;
   setData: React.Dispatch<React.SetStateAction<DataType[]>>;
-  recently_added?: boolean; // Optional property
+  recentlyAdded?: boolean; // Optional property
+}
+
+// types for static brands.json
+export interface BrandsType {
+  name: string;
+  image: string;
+  url: string;
 }

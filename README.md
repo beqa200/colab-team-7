@@ -28,3 +28,7 @@ Welcome to the Colab Team 7 project! This repository contains the codebase for o
 
 - https://flowbite.com/docs/components/card/
 - E-commerce card #
+
+## mui/material
+
+- `npm install @mui/material @emotion/react @emotion/styled`

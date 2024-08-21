@@ -19,7 +19,7 @@ interface ProductItem {
   warranty: string;
   deliveryTime: string;
   stock: string;
-  recently_added: string;
+  recentlyAdded: string;
 }
 
 const NewItemInStock: React.FC = () => {
@@ -27,12 +27,9 @@ const NewItemInStock: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const recentlyAddedItems = Data.products.filter(
-      (product) => product.recently_added === "true"
-    );
+    const recentlyAddedItems = Data.products.filter((product) => product.recentlyAdded === "true");
 
-    const randomItem =
-      recentlyAddedItems[Math.floor(Math.random() * recentlyAddedItems.length)];
+    const randomItem = recentlyAddedItems[Math.floor(Math.random() * recentlyAddedItems.length)];
 
     setNewProduct(randomItem);
   }, []);

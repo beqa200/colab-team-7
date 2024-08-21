@@ -6,6 +6,7 @@ import data from "../productData.json";
 import GalleryWithPickerZoom from "../components/productPage/GalleryWithPickerZoom";
 import NavBar from "../components/productPage/NavBar";
 import Stars from "../components/productPage/Stars";
+import TrustedBrandsSlider from "../components/productPage/TrustedBrandsSlider";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>(); // Get the product ID from the URL
@@ -18,10 +19,10 @@ export default function Product() {
   }
 
   return (
-    <div>
+    <div className="">
       <NavBar />
 
-      <main className="max-w-7xl mx-auto p-6 flex-1">
+      <main className="max-w-7xl mx-auto p-6 flex-1 mt-6">
         <section className="flex flex-col md:flex-row ">
           <aside className="w-full md:w-[70%] bg-white ">
             <GalleryWithPickerZoom images={product.additionalImages} mainImage={product.image} />
@@ -40,6 +41,10 @@ export default function Product() {
             </div>
             <p className="text-sm text-gray-600">Reviews: {product.reviews}</p>
           </article>
+        </section>
+
+        <section className="mt-12">
+          <TrustedBrandsSlider />
         </section>
 
         <section className="mt-8">{/* <Accordion /> */}</section>
