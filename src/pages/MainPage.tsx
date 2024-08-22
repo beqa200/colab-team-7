@@ -73,7 +73,8 @@ export default function MainPage() {
         </div>
 
         {/* Audio toggle button */}
-        <button onClick={handleAudioToggle}>
+        <button onClick={handleAudioToggle} className="absolute top-4 right-4 bg-gray-800 p-2 rounded-full shadow-lg">
+
           {isAudioPlaying ? (
             <SpeakerWaveIcon className="w-6 h-6 text-white" />
           ) : (

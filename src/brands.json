@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Apple", "image": "/assetsForProductPage/apple.png", "url": "https://www.apple.com" },
+  { "id": 2, "name": "Microsoft", "image": "/assetsForProductPage/microsoft.png", "url": "https://www.microsoft.com" },
+  { "id": 3, "name": "Google", "image": "/assetsForProductPage/google.png", "url": "https://www.google.com" },
+  { "id": 4, "name": "Samsung", "image": "/assetsForProductPage/samsung.png", "url": "https://www.samsung.com" },
+  { "id": 5, "name": "Intel", "image": "/assetsForProductPage/intel.png", "url": "https://www.intel.com" },
+  { "id": 6, "name": "IBM", "image": "/assetsForProductPage/ibm.png", "url": "https://www.ibm.com" },
+  { "id": 7, "name": "Sony", "image": "/assetsForProductPage/sony.png", "url": "https://www.sony.com" },
+  { "id": 8, "name": "Huawei", "image": "/assetsForProductPage/huawei.png", "url": "https://www.huawei.com" },
+  { "id": 9, "name": "NVIDIA", "image": "/assetsForProductPage/nvidia.png", "url": "https://www.nvidia.com" }
+]

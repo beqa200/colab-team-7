@@ -96,28 +96,8 @@ export default function CategoryCarousel() {
     <div className="relative">
       <Slider ref={sliderRef} {...settings}>
         {categories.map((category, index) => (
-<<<<<<< HEAD
-          <div key={index} className="relative group category_card">
-            {category.isVideo ? (
-              <video
-                src={category.imgSrc}
-                className="w-full h-[280px] object-cover rounded-lg shadow-lg group-hover:blur-sm"
-                autoPlay
-                loop
-                muted></video>
-            ) : (
-              <img
-                src={category.imgSrc}
-                alt={category.alt}
-                className="w-full h-auto rounded-lg shadow-lg group-hover:blur-sm"
-              />
-            )}
-=======
-          <div
-            key={index}
-            className="relative group category_card"
-            onClick={() => navigate(`/${category.alt}`)}
-          >
+
+     <div key={index} className="relative group category_card" onClick={() => navigate(`/${category.alt}`)}>
             <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
               {category.isVimeo ? (
                 <iframe
@@ -142,7 +122,6 @@ export default function CategoryCarousel() {
                 />
               )}
             </div>
->>>>>>> 004e7856a106742fa1a6666812f3e67c650c2c6b
             <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-white text-xl font-semibold transition-opacity duration-300">
               {category.alt}
             </span>
