@@ -76,7 +76,7 @@ const NewItemInStock: React.FC = () => {
 
       <div className="order-1 xl:order-2 flex flex-col items-center">
         <div className="flex xl:hidden w-full items-center justify-center gap-4 pt-4 mb-[-6rem] transition-all duration-1000 ease-in-out">
-          <span className="text-white text-center w-full pl-[2rem] text-2xl font-semibold">
+          <span className="text-white h-[60px] text-center w-full pl-[2rem] text-2xl font-semibold">
             {newProduct.title} <AnimatedText text={"Aerox 5"} period={1000} /> \
           </span>
         </div>
@@ -85,7 +85,7 @@ const NewItemInStock: React.FC = () => {
           src={newProduct.image}
           alt="Zoomable product image"
           zoom={"250"}
-          className="NewItemImage object-cover rounded-md border-2 border-gray-600"
+          className="NewItemImage ] object-cover rounded-md border-2 border-gray-600"
         />
       </div>
     </div>

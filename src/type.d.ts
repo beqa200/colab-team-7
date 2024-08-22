@@ -40,3 +40,7 @@ export interface BrandsType {
   image: string;
   url: string;
 }
+interface CategoryType {
+  selecetedCategory: null | string;
+  setselecetedCategory: React.Dispatch<React.SetStateAction<string | null>>;
+}

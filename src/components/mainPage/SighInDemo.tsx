@@ -1,44 +1,52 @@
-import axios from "axios";
 import React from "react";
 import { Form, Input, Checkbox, Button } from "antd";
 
 type FieldType = {
   username: string;
-  password2: string;
+  password: string;
   remember: boolean;
-  email: string;
-  password1: string;
 };
 
 const onFinish = async (values: FieldType) => {
   console.log("Success:", values);
 
   try {
-    const response = await axios.post(
-      "https://ecommerce-api-r62c.onrender.com/accounts/",
+    const response = await fetch(
+      "https://ecommerce-api-r62c.onrender.com/dj-rest-auth/login/",
       {
-        username: values.username,
-        email: values.email,
-        password1: values.password1,
-        password2: values.password2,
-      },
-      {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // "X-CSRFToken": csrfToken, // Uncomment if you manage CSRF tokens
         },
-        withCredentials: true, // Ensure credentials are included
+        credentials: "include",
+        body: JSON.stringify({
+          username: values.username,
+          password: values.password,
+        }),
       }
     );
 
-    console.log("Response:", response.data);
+    const contentType = response.headers.get("content-type");
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let data: any;
 
-    // Axios automatically checks for response.ok
-    if (response.status === 200) {
-      console.log("Success");
+    if (contentType && contentType.includes("application/json")) {
+      data = await response.json();
     } else {
-      console.error("Error:", response.data);
-      alert(`Failed to sign up: ${response.data.detail || "Unknown error"}`);
+      const text = await response.text();
+      console.error("Unexpected response format:", text);
+      return;
+    }
+
+    console.log("Response:", data);
+
+    if (response.ok) {
+      console.log("Success");
+      localStorage.setItem("token", data.access);
+      window.location.reload();
+    } else {
+      console.error("Error:", data);
+      alert(`Failed to sign in: ${data.detail || "Unknown error"}`);
     }
   } catch (error) {
     console.error("Error:", error);
@@ -46,12 +54,12 @@ const onFinish = async (values: FieldType) => {
   }
 };
 
-const App: React.FC = () => (
+const SignIn: React.FC = () => (
   <Form
     name="basic"
     labelCol={{ span: 8 }}
     wrapperCol={{ span: 16 }}
-    style={{ maxWidth: 600 }}
+    style={{ maxWidth: 600, marginTop: "20rem" }}
     initialValues={{ remember: true }}
     onFinish={onFinish}
     autoComplete="off"
@@ -65,25 +73,9 @@ const App: React.FC = () => (
     </Form.Item>
 
     <Form.Item<FieldType>
-      label="Email"
-      name="email"
-      rules={[{ required: true, message: "Please input your email!" }]}
-    >
-      <Input />
-    </Form.Item>
-
-    <Form.Item<FieldType>
       label="Password"
-      name="password1"
+      name="password"
       rules={[{ required: true, message: "Please input your password!" }]}
-    >
-      <Input.Password />
-    </Form.Item>
-
-    <Form.Item<FieldType>
-      label="Confirm Password"
-      name="password2"
-      rules={[{ required: true, message: "Please confirm your password!" }]}
     >
       <Input.Password />
     </Form.Item>
@@ -98,10 +90,10 @@ const App: React.FC = () => (
 
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
       <Button type="primary" htmlType="submit">
-        Submit
+        Sign In
       </Button>
     </Form.Item>
   </Form>
 );
 
-export default App;
+export default SignIn;
