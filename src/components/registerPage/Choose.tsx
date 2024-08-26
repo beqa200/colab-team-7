@@ -13,11 +13,10 @@ const Choose: React.FC<ChooseProps> = ({ onSelect }) => {
 
         setIsAnimating(true);
 
-        // Wait for the animation to end
         setTimeout(() => {
             onSelect(choice);
-            setIsAnimating(false); // Reset animation state
-        }, 300); // Match this time to the CSS animation duration
+            setIsAnimating(false);
+        }, 300);
     };
 
     return (

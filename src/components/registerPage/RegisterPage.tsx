@@ -1,8 +1,8 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import userImg from "./../../assets/images/bx-user.svg";
-import passwordImg from "./../../assets/images/bxs-lock-alt.svg";
-import passwordOpenImg from "./../../assets/images/lock-open-solid.svg";
+import userImg from "./../../../public/assetsForSignupSignin/bx-user.svg";
+import passwordImg from "./../../../public/assetsForSignupSignin/bxs-lock-alt.svg";
+import passwordOpenImg from "./../../../public/assetsForSignupSignin/lock-open-solid.svg";
 import { Link } from "react-router-dom";
 import './RegisterPage.css'
 
@@ -83,7 +83,7 @@ export default function SignUpSignIn() {
             return;
         }
 
-        navigate('/registration-completed');
+        //registraciis logika
     }
 
     return (

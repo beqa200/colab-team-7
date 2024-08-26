@@ -1,9 +1,9 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import userImg from './../../assets/images/bx-user.svg';
-import passwordImg from './../../assets/images/bxs-lock-alt.svg';
-import passwordOpenImg from './../../assets/images/lock-open-solid.svg';
+import userImg from './../../../public/assetsForSignupSignin/bx-user.svg';
+import passwordImg from './../../../public/assetsForSignupSignin/bxs-lock-alt.svg';
+import passwordOpenImg from './../../../public/assetsForSignupSignin/lock-open-solid.svg';
 import './LoginPage.css';
 
 const LoginPage: React.FC = () => {
@@ -51,7 +51,7 @@ const LoginPage: React.FC = () => {
       setIsEmailValid(false);
       return;
     }
-    // Handle login logic here
+    // loginis logika
   };
 
   return (

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
 import { stack as Menu } from 'react-burger-menu'
-import Choose from './../choose/Choose'
-import LoginPage from './../loginPage/LoginPage'
-import RegisterPage from './../registerPage/RegisterPage' 
+import Choose from './Choose'
+import LoginPage from './LoginPage'
+import RegisterPage from './RegisterPage' 
 import './CreateProfile.css';
 
 const CreateProfile: React.FC = () => {
