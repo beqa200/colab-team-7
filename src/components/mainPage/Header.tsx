@@ -45,7 +45,7 @@ const HeaderComponent = () => {
               </svg>
               <span
                 onClick={() => navigate("/")}
-                className="ml-2 text-[14px] text-[bond] font-semibold text-[#252C32]"
+                className="ml-2 text-[14px] text-[bond] font-semibold text-[#252C32] cursor-pointer"
               >
                 What a Market
               </span>
