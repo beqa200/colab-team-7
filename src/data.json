@@ -2,22 +2,22 @@
   "products": [
     {
       "id": 1,
-      "image": "/assetsForMainPage/6f04e2212d5007665792352d75caa6e8.jpg",
-      "title": "Creative mobile Series",
-      "rating": 4.5,
-      "price": "699",
-      "reviews": 120,
-      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
-      "category": "Mouse",
-      "discount": "500",
+      "image": "/images/smart_watch_carbon_fiber.jpeg",
+      "title": "Innovative Smart Watch, Carbon Fiber Design",
+      "rating": 4.0,
+      "price": "499",
+      "reviews": 98,
+      "description": "This innovative smart watch with a carbon fiber design offers style and functionality in one. Equipped with advanced fitness tracking, notifications, and customizable watch faces, it’s perfect for the tech-savvy individual.",
+      "category": "Others",
+      "discount": "0",
       "additionalImages": [
-        "/images/smartphone_aluminium_starlight_back.jpeg",
-        "/images/smartphone_aluminium_starlight_side.jpeg",
-        "/images/smartphone_aluminium_starlight_angle.jpeg"
+        "/images/smart_watch_carbon_fiber_side.jpeg",
+        "/images/smart_watch_carbon_fiber_angle.jpeg",
+        "/images/smart_watch_carbon_fiber_back.jpeg"
       ],
-      "colorOptions": ["Starlight", "Midnight", "Blue", "Red"],
-      "warranty": "2 years",
-      "deliveryTime": "3-5 business days",
+      "colorOptions": ["Black", "Gray", "Silver"],
+      "warranty": "1 year",
+      "deliveryTime": "2-4 business days",
       "stock": "In Stock",
       "recentlyAdded": "false"
     },
@@ -29,7 +29,7 @@
       "price": "699",
       "reviews": 120,
       "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
-      "category": "Mouse",
+      "category": "Others",
       "discount": "500",
       "additionalImages": [
         "/images/smartphone_aluminium_starlight_back.jpeg",
@@ -50,7 +50,7 @@
       "price": "699",
       "reviews": 120,
       "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
-      "category": "Mouse",
+      "category": "Others",
       "discount": "500",
       "additionalImages": [
         "/images/smartphone_aluminium_starlight_back.jpeg",
@@ -237,9 +237,6 @@
       "price": "1299",
       "reviews": 120,
 
-      "description": "The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
-      "category": "PC",
-
       "description": "    The Creative Mobile Series Starlight Sport features a sleek aluminium case that combines durability with style. Designed for the modern user, this smartphone offers exceptional performance, a brilliant display, and cutting-edge features to keep you connected on the go.",
       "category": "Case",
       "discount": "500",
@@ -255,5 +252,5 @@
       "recentlyAdded": "true"
     }
   ],
-  "categories": ["Key Board", "Mouse", "Monitor", "CPU Coolers", "Case", "Head phones"]
+  "categories": ["Key Board", "Mouse", "Monitor", "CPU Coolers", "Case", "Head phones", "others"]
 }

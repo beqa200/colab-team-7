@@ -11,3 +11,7 @@
 .animate-scroll {
   animation: scroll 30s linear infinite;
 }
+
+.relativeness {
+  background-color: white;
+}
