@@ -202,6 +202,7 @@ const HeaderComponent = () => {
             <div className=" md:flex hidden gap-x-8 flex-wrap">
               {Data.categories.map((category) => (
                 <span
+                  key={category}
                   onClick={() => navigate(`/category/${encodeURIComponent(category)}`)}
                   className="cursor-pointer rounded-sm py-1 px-2 text-sm font-medium hover:bg-gray-100"
                 >
