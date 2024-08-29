@@ -4,14 +4,7 @@ import { MyContext } from "../../contextApi/Context";
 
 export default function Category() {
   const { selecetedCategory, setselecetedCategory } = useContext(MyContext);
-  const category = [
-    "See All",
-    "Mouses",
-    "Keyboard",
-    "Monitors",
-    "Headsets",
-    "PC",
-  ];
+  const category = ["See All", "Mouses", "Keyboard", "Monitors", "Headsets", "PC", "Others"];
   return (
     <>
       <main>
@@ -21,14 +14,8 @@ export default function Category() {
               {category.map((items, index) => {
                 return (
                   <button
-                    className={`${
-                      items === selecetedCategory
-                        ? "bg-black text-white"
-                        : "bg-white text-black"
-                    } ${
-                      items === "See All" &&
-                      selecetedCategory === null &&
-                      "!bg-black !text-white "
+                    className={`${items === selecetedCategory ? "bg-black text-white" : "bg-white text-black"} ${
+                      items === "See All" && selecetedCategory === null && "!bg-black !text-white "
                     }`}
                     key={index}
                     onClick={() => {
@@ -37,7 +24,8 @@ export default function Category() {
                       } else {
                         setselecetedCategory(items);
                       }
-                    }}>
+                    }}
+                  >
                     {items}
                   </button>
                 );

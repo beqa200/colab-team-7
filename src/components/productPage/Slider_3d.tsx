@@ -17,8 +17,8 @@ const Slider3D: React.FC = () => {
 
   return (
     <div className="relative-3d ">
-      <div className="banner">
-        <div className="slider" style={{ "--quantity": 9 } as React.CSSProperties}>
+      <div className="banner-slider">
+        <div className="slider " style={{ "--quantity": 9 } as React.CSSProperties}>
           <div className="item" style={{ "--position": 2 } as React.CSSProperties}>
             <img src="/assetsForProductPage/productImages/3watches.png" alt="watches" onClick={() => handleClick("/product/1")} />
           </div>

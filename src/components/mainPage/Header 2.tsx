@@ -69,11 +69,7 @@ const HeaderComponent = () => {
                     stroke="currentColor"
                     strokeWidth="2"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M11 4a7 7 0 110 14 7 7 0 010-14zM21 21l-4.35-4.35"
-                    />{" "}
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11 4a7 7 0 110 14 7 7 0 010-14zM21 21l-4.35-4.35" />{" "}
                   </svg>
                 </i>
               </span>
@@ -83,10 +79,7 @@ const HeaderComponent = () => {
             <div className="ml-2 flex">
               <div className="border md:hidden transition-all duration-[1s] ease-in-out flex">
                 <div className="inline relative">
-                  <button
-                    type="button"
-                    className="inline-flex items-center  relative px-[10px] py-[2px] border rounded-full hover:shadow-lg"
-                  >
+                  <button type="button" className="inline-flex items-center  relative px-[10px] py-[2px] border rounded-full hover:shadow-lg">
                     <div className="pl-1">
                       <svg
                         viewBox="0 0 32 32"
@@ -135,29 +128,15 @@ const HeaderComponent = () => {
               </div>
               <div className="md:flex transition-all ease-in-out duration-[1s] hidden">
                 <div className="flex cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-[2rem] w-[2rem] text-gray-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-[2rem] w-[2rem] text-gray-500" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z" />
-                    <path
-                      fillRule="evenodd"
-                      d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
-                      clipRule="evenodd"
-                    />
+                    <path fillRule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clipRule="evenodd" />
                   </svg>
                   <span className="text-sm font-medium">Orders</span>
                 </div>
 
                 <div className="flex cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-[2rem] w-[2rem] text-gray-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-[2rem] w-[2rem] text-gray-500" viewBox="0 0 20 20" fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
@@ -169,17 +148,10 @@ const HeaderComponent = () => {
 
                 <div className="flex cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100">
                   <div className="relative">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-[2rem] w-[2rem] text-gray-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-[2rem] w-[2rem] text-gray-500" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                     </svg>
-                    <span className="absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 p-2 text-xs text-white">
-                      3
-                    </span>
+                    <span className="absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 p-2 text-xs text-white">3</span>
                   </div>
                   <span className="text-sm font-medium">Cart</span>
                 </div>
@@ -216,10 +188,7 @@ const HeaderComponent = () => {
                       </button>
                     </div>
                   ) : (
-                    <div
-                      className="ml-2 flex cursor-pointer items-center gap-x-1 rounded-md border py-2 px-4 hover:bg-gray-100"
-                      onClick={handleSignInClick}
-                    >
+                    <div className="ml-2 flex cursor-pointer items-center gap-x-1 rounded-md border py-2 px-4 hover:bg-gray-100" onClick={handleSignInClick}>
                       <span className="text-sm font-medium">Sign in</span>
                     </div>
                   )}
@@ -229,10 +198,11 @@ const HeaderComponent = () => {
           </div>
 
           <div className="mt-4 flex items-center justify-center">
+            {/* //Category  */}
             <div className=" md:flex hidden gap-x-8 flex-wrap">
               {Data.categories.map((category) => (
                 <span
-                  onClick={() => navigate(`/${category}`)}
+                  onClick={() => navigate(`/category/${encodeURIComponent(category)}`)}
                   className="cursor-pointer rounded-sm py-1 px-2 text-sm font-medium hover:bg-gray-100"
                 >
                   {category}

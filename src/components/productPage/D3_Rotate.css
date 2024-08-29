@@ -15,7 +15,7 @@
   padding: 0;
   margin: 0;
 }
-header {
+.header {
   width: min(1200px, 90vw);
   margin: auto;
   display: flex;
@@ -24,31 +24,32 @@ header {
   height: 0px;
   flex-wrap: wrap;
 }
-header h1 {
+.header h1 {
   font-family: "Karantina", system-ui;
   font-size: 16vw;
   line-height: 0.8em;
+  text-shadow: 1px 1px 0px #00ff00, /* Top-right */ -1px -1px 0px #00ff00, /* Bottom-left */ 1px -1px 0px #00ff00, /* Top-left */ -1px 1px 0px #00ff00; /* Bottom-right */
 }
-header .author {
+.header .author {
   text-align: right;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-header h3 {
+.header h3 {
   font-family: "Karantina", system-ui;
   font-size: 5vw;
 }
-header .author div {
+.header .author div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .author div p:nth-child(2) {
+.header .author div p:nth-child(2) {
   font-weight: 500;
 }
 
-header .author img {
+.header .author img {
   width: 250px;
 }
 .banner {
@@ -74,7 +75,7 @@ header .author img {
 }
 .soda {
   --left: 0px;
-  background: var(--url) var(--left), url(/assetsForProductPage/slider_3d/mouseblk.png) 0 0;
+  background: var(--url) var(--left), url(/assetsForProductPage/productImages/razer-viper-mini-png.png) 0 0;
   background-size: auto 90%;
   background-repeat: no-repeat;
 
@@ -148,10 +149,10 @@ header .author img {
   .soda {
     width: 250px;
   }
-  header img {
+  .header img {
     display: none;
   }
-  header .author {
+  .header .author {
     width: 100%;
   }
 }

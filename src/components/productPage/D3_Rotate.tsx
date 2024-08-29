@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <header className="">
+    <div className="header">
       <div className="left  mt-8">
-        <h1>razer viper</h1>
-        <img src="/assetsForProductPage/3dRotate/2.png" alt="CSS Only" />
+        <h1 className="animate-pulse ">razer viper</h1>
+        <img src="/assetsForProductPage/3dRotate/2.png" alt="CSS Only" className="filter hue-rotate-90" />
       </div>
       <div className="author">
         <h3>Top Product</h3>
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <div></div>
         <img src="/assetsForProductPage/3dRotate/code.png" alt="Code By Lun Dev" />
       </div>
-    </header>
+    </div>
   );
 };
 
@@ -26,7 +26,7 @@ const Banner: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/product/10");
+    navigate("/product/8");
     setTimeout(() => {
       window.scrollTo({
         top: 0,

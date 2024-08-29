@@ -13,7 +13,7 @@
     repeating-linear-gradient(to bottom, transparent 0 100px, #25283b22 100px 101px);
 }
 
-.relative-3d::before {
+.relative::before {
   position: absolute;
   width: min(1200px, 90vw);
   top: 10%;
@@ -28,14 +28,14 @@
   pointer-events: none;
 }
 
-.banner {
+.banner-slider {
   width: 100%;
   height: 100vh;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-.banner .slider {
+.banner-slider .slider {
   position: absolute;
   width: 200px;
   height: 250px;
@@ -55,17 +55,17 @@
   }
 }
 
-.banner .slider .item {
+.banner-slider .slider .item {
   position: absolute;
   inset: 0 0 0 0;
   transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(500px);
 }
-.banner .slider .item img {
+.banner-slider .slider .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.banner .content {
+.banner-slider .content {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -79,14 +79,14 @@
   align-items: center;
   z-index: 1;
 }
-.banner .content h1 {
+.banner-slider .content h1 {
   font-family: "ICA Rubrik";
   font-size: 16em;
   line-height: 1em;
   color: #25283b;
   position: relative;
 }
-.banner .content h1::after {
+.banner-slider .content h1::after {
   position: absolute;
   inset: 0 0 0 0;
   content: attr(data-content);
@@ -94,7 +94,7 @@
   -webkit-text-stroke: 2px #d2d2d2;
   color: transparent;
 }
-.banner .content .author {
+.banner-slider .content .author {
   font-family: Poppins;
   text-align: right;
   max-width: 200px;
@@ -111,10 +111,10 @@
   padding: 0 30px;
 }
 
-.banner .content h2 {
+.banner-slider .content h2 {
   font-size: 3em;
 }
-.banner .content .model {
+.banner-slider .content .model {
   background-image: url(/assetsForProductPage/slider_3d/creativeRobotPng.png);
   width: 100%;
   height: 75vh;
@@ -128,7 +128,7 @@
 }
 
 /* Global Styles */
-.banner {
+.banner-slider {
   width: 100%;
   height: 100vh; /* Default full screen height */
   text-align: center;
@@ -137,15 +137,15 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .banner {
+  .banner-slider {
     height: 80vh; /* Adjust height for medium screens */
   }
-  .banner .slider {
+  .banner-slider .slider {
     width: 180px;
     height: 200px;
     left: calc(50% - 80px);
   }
-  .banner .slider .item {
+  .banner-slider .slider .item {
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(350px);
   }
 
@@ -158,13 +158,13 @@
     opacity: 1;
   }
 
-  .banner .content h1 {
+  .banner-slider .content h1 {
     text-align: center;
     width: 100%;
     text-shadow: 0 10px 20px #000;
     font-size: 7em;
   }
-  .banner .content .author {
+  .banner-slider .content .author {
     color: #fff;
     padding: 20px;
     text-shadow: 0 10px 20px #000;
@@ -177,22 +177,22 @@
 }
 
 @media screen and (max-width: 767px) {
-  .banner {
+  .banner-slider {
     height: 60vh; /* Adjust height for small screens */
   }
-  .banner .slider {
+  .banner-slider .slider {
     width: 100px;
     height: 150px;
     left: calc(50% - 50px);
   }
-  .banner .slider .item {
+  .banner-slider .slider .item {
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(180px);
   }
-  .banner .content h1 {
+  .banner-slider .content h1 {
     font-size: 5em;
   }
-  .banner .content .model {
-    height: 50vh; /* Make the model image height responsive */
+  .banner-slider .content .model {
+    height: 60vh; /* Make the model image height responsive */
   }
 }
 

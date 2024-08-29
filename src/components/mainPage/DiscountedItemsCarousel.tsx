@@ -77,8 +77,8 @@ export default function DiscountedItemsCarousel() {
 
   const visibleItems = getVisibleItems();
 
-  const handleCardClick = (category: string, productId: number) => {
-    navigate(`/${category}/${productId}`);
+  const handleCardClick = (productId: number) => {
+    navigate(`/product/${productId}`);
   };
 
   const handleAddToCart = (productId: number) => {
@@ -124,10 +124,10 @@ export default function DiscountedItemsCarousel() {
           }}
         >
           {visibleItems.map((item, index) => (
-            <div className="p-[1rem] carousel-item fixed-size-item" key={index} onClick={() => handleCardClick(item.category, item.id)}>
+            <div className="p-[1rem] carousel-item fixed-size-item" key={index} onClick={() => handleCardClick(item.id)}>
               <div className="bg-[#e3e1e1] relative fixed-size-content">
                 <img
-                  className={`cartIcon w-[45px] h-[35px] transition-transform duration-300 ${
+                  className={`cartIcon w-[45px] h-[35px] transition-transform duration-300  ${
                     cartItems.includes(item.id) ? "text-green-500" : "hover:scale-105"
                   }`}
                   src={
