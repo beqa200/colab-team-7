@@ -37,14 +37,7 @@ const NavBar: React.FC = () => {
             </li>
             <li className="">
               <a href="#">
-                <Hamburger
-                  label="Show menu"
-                  toggled={isOpen}
-                  toggle={setIsOpen}
-                  size={30}
-                  direction="right"
-                  distance="lg"
-                />
+                <Hamburger label="Show menu" toggled={isOpen} toggle={setIsOpen} size={30} direction="right" distance="lg" />
               </a>
             </li>
           </ul>

@@ -51,11 +51,11 @@ const NewItemInStock: React.FC = () => {
         alt="New item ribbon"
       />
       <div className="flex-1 order-2 w-full pr-4">
-        <p className="text-white w-full flex flex-col gap-4 pl-4 mt-2 text-base">
-          <span className="text-white w-full pl-[2rem] font-bold hidden xl:flex text-2xl">
+        <div className="text-white w-full flex flex-col gap-4 pl-4 mt-2 text-base">
+          <div className="text-white w-full pl-[2rem] font-bold hidden xl:flex text-2xl">
             {newProduct.title} &nbsp;
             <AnimatedText text={"Get one Now..."} period={1000} /> \
-          </span>
+          </div>
           <div className="newItemDescription w-full flex flex-col gap-[3rem]">
             <span
               style={{
@@ -72,14 +72,14 @@ const NewItemInStock: React.FC = () => {
               See more<span className="arrow"></span>
             </a>
           </div>
-        </p>
+        </div>
       </div>
 
       <div className="order-1 xl:order-2 flex flex-col items-center">
         <div className="flex xl:hidden w-full items-center justify-center gap-4 pt-4 mb-[-6rem] transition-all duration-1000 ease-in-out">
-          <span className="text-white h-[60px] text-center w-full pl-[2rem] text-2xl font-semibold">
+          <div className="text-white h-[60px] text-center w-full pl-[2rem] text-2xl font-semibold">
             {newProduct.title} <AnimatedText text={"Aerox 5"} period={1000} /> \
-          </span>
+          </div>
         </div>
 
         <ImageZoom src={newProduct.image} alt="Zoomable product image" zoom={250} className="NewItemImage object-cover rounded-md border-2 border-gray-600" />
