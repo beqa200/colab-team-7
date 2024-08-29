@@ -1,51 +1,40 @@
 import { createContext, useState, ReactNode } from "react";
-import CategoryType from "../type";
+import { MyContextType, DataType, CategoryType } from "../types/type"; // Adjust the path as needed
 
 // Ensure this import is correct for DataType
-
-export interface MycontextType {
-  Show: boolean;
-  setShow: React.Dispatch<React.SetStateAction<boolean>>;
-  Counter: number;
-  setCounter: React.Dispatch<React.SetStateAction<number>>;
-  Data: DataType[];
-  setData: React.Dispatch<React.SetStateAction<DataType[]>>;
-  selecetedCategory: null | string;
-  setselecetedCategory: React.Dispatch<React.SetStateAction<null | string>>;
-}
-
-const defaultContextValue: MycontextType = {
-  Data: [],
+const defaultContextValue: MyContextType = {
+  data: [],
   setData: () => {},
-  Counter: 1,
+  counter: 1,
   setCounter: () => {},
-  Show: false,
+  show: false,
   setShow: () => {},
+  recentlyAdded: false,
   selecetedCategory: null,
-  setselecetedCategory: () => {},
+  setSelecetedCategory: () => {},
 };
 
-export const MyContext = createContext<MycontextType>(defaultContextValue);
+export const MyContext = createContext<MyContextType>(defaultContextValue);
 
 export const MyProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [Data, setData] = useState<DataType[]>([]); // Replace DataJSON with an empty array or initial data
-  const [Counter, setCounter] = useState<number>(1);
-  const [Show, setShow] = useState<boolean>(true);
-  const [selecetedCategory, setselecetedCategory] =
-    useState<CategoryType>(null);
+  const [data, setData] = useState<DataType[]>([]); // Replace DataJSON with an empty array or initial data
+  const [counter, setCounter] = useState<number>(1);
+  const [show, setShow] = useState<boolean>(true);
+  const [selecetedCategory, setSelecetedCategory] = useState<CategoryType>(null);
 
   return (
     <MyContext.Provider
       value={{
-        Data,
+        data,
         setData,
-        Counter,
+        counter,
         setCounter,
-        Show,
+        show,
         setShow,
         selecetedCategory,
-        setselecetedCategory,
-      }}>
+        setSelecetedCategory,
+      }}
+    >
       {children}
     </MyContext.Provider>
   );
