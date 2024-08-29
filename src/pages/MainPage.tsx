@@ -5,7 +5,7 @@ import CategoryCarousel from "../components/mainPage/CategoryCarousel";
 // import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
 import NewItemInStock from "../components/mainPage/NewItemInStock";
 import DiscountedItemsCarousel from "../components/mainPage/DiscountedItemsCarousel";
-import Category from "../components/productPage/Category";
+// import Category from "../components/productPage/Category";
 
 export default function MainPage() {
   const [isAudioPlaying, setIsAudioPlaying] = useState(true);
