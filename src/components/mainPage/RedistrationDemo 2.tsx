@@ -13,22 +13,19 @@ const onFinish = async (values: FieldType) => {
   console.log("Success:", values);
 
   try {
-    const response = await fetch(
-      "https://ecommerce-api-r62c.onrender.com/dj-rest-auth/registration/",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+    const response = await fetch("https://ecommerce-api-r62c.onrender.com/dj-rest-auth/registration/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
 
-        body: JSON.stringify({
-          username: values.username,
-          email: values.email,
-          password1: values.password1,
-          password2: values.password2,
-        }),
-      }
-    );
+      body: JSON.stringify({
+        username: values.username,
+        email: values.email,
+        password1: values.password1,
+        password2: values.password2,
+      }),
+    });
 
     if (response.ok) {
       console.log("Success");
@@ -49,43 +46,23 @@ const RegistrationDemo: React.FC = () => (
     onFinish={onFinish}
     autoComplete="off"
   >
-    <Form.Item<FieldType>
-      label="Username"
-      name="username"
-      rules={[{ required: true, message: "Please input your username!" }]}
-    >
+    <Form.Item<FieldType> label="Username" name="username" rules={[{ required: true, message: "Please input your username!" }]}>
       <Input />
     </Form.Item>
 
-    <Form.Item<FieldType>
-      label="Email"
-      name="email"
-      rules={[{ required: true, message: "Please input your email!" }]}
-    >
+    <Form.Item<FieldType> label="Email" name="email" rules={[{ required: true, message: "Please input your email!" }]}>
       <Input />
     </Form.Item>
 
-    <Form.Item<FieldType>
-      label="Password"
-      name="password1"
-      rules={[{ required: true, message: "Please input your password!" }]}
-    >
+    <Form.Item<FieldType> label="Password" name="password1" rules={[{ required: true, message: "Please input your password!" }]}>
       <Input.Password />
     </Form.Item>
 
-    <Form.Item<FieldType>
-      label="Confirm Password"
-      name="password2"
-      rules={[{ required: true, message: "Please confirm your password!" }]}
-    >
+    <Form.Item<FieldType> label="Confirm Password" name="password2" rules={[{ required: true, message: "Please confirm your password!" }]}>
       <Input.Password />
     </Form.Item>
 
-    <Form.Item<FieldType>
-      name="remember"
-      valuePropName="checked"
-      wrapperCol={{ offset: 8, span: 16 }}
-    >
+    <Form.Item<FieldType> name="remember" valuePropName="checked" wrapperCol={{ offset: 8, span: 16 }}>
       <Checkbox>Remember me</Checkbox>
     </Form.Item>
 
