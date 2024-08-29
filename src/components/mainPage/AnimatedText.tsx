@@ -10,7 +10,6 @@ const TypingEffect = ({ text, period }: { text: string; period: number }) => {
     const handleTyping = () => {
       const fullText = text;
       const isDeletingText = isDeleting;
-      //   const currentIndex = loopNum % fullText.length;
 
       setDisplayText((prevText) => {
         if (isDeletingText) {
@@ -35,23 +34,24 @@ const TypingEffect = ({ text, period }: { text: string; period: number }) => {
   }, [displayText, isDeleting, loopNum, period, text]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      whileHover={{ opacity: 1 }}
-      className="text-[red]"
-      style={{
-        fontSize: "24px",
-        fontWeight: "bold",
-
-        borderRight: "2px solid red",
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-      }}
-    >
-      {displayText}
-    </motion.div>
+    <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        whileHover={{ opacity: 1 }}
+        className="text-[red]"
+        style={{
+          fontSize: "24px",
+          fontWeight: "bold",
+          borderRight: "2px solid red",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+        }}
+      >
+        {displayText}
+      </motion.div>
+    </div>
   );
 };
 
