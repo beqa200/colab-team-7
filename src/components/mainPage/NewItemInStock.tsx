@@ -39,7 +39,8 @@ const NewItemInStock: React.FC = () => {
   }
 
   const handleSeeDetailsClick = () => {
-    navigate(`/${newProduct.category}/${newProduct.id}`);
+    // Navigate to the product details page using the product ID
+    navigate(`/product/${newProduct.id}`);
   };
 
   return (
@@ -53,7 +54,7 @@ const NewItemInStock: React.FC = () => {
         <p className="text-white w-full flex flex-col gap-4 pl-4 mt-2 text-base">
           <span className="text-white w-full pl-[2rem] font-bold hidden xl:flex text-2xl">
             {newProduct.title} &nbsp;
-            <AnimatedText text={"Aerox 5"} period={1000} /> \
+            <AnimatedText text={"Get one Now..."} period={1000} /> \
           </span>
           <div className="newItemDescription w-full flex flex-col gap-[3rem]">
             <span
@@ -81,12 +82,7 @@ const NewItemInStock: React.FC = () => {
           </span>
         </div>
 
-        <ImageZoom
-          src={newProduct.image}
-          alt="Zoomable product image"
-          zoom={"250"}
-          className="NewItemImage ] object-cover rounded-md border-2 border-gray-600"
-        />
+        <ImageZoom src={newProduct.image} alt="Zoomable product image" zoom={250} className="NewItemImage object-cover rounded-md border-2 border-gray-600" />
       </div>
     </div>
   );

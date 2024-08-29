@@ -74,12 +74,7 @@ export default function MainPage() {
 
         {/* Audio toggle button */}
         <button onClick={handleAudioToggle} className="absolute top-4 right-4 bg-gray-800 p-2 rounded-full shadow-lg">
-
-          {isAudioPlaying ? (
-            <SpeakerWaveIcon className="w-6 h-6 text-white" />
-          ) : (
-            <SpeakerXMarkIcon className="w-6 h-6 text-white" />
-          )}
+          {isAudioPlaying ? <SpeakerWaveIcon className="w-6 h-6 text-white" /> : <SpeakerXMarkIcon className="w-6 h-6 text-white" />}
         </button>
       </div>
 
@@ -87,7 +82,7 @@ export default function MainPage() {
         <source src="/assetsForMainPage/audios/Orpheus-Male.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
-      <Category />
+      {/* <Category /> */}
       <section ref={categoriesRef} className="categories_Section">
         <CategoryCarousel />
       </section>

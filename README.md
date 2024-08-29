@@ -4,6 +4,12 @@
 
 Welcome to the Colab Team 7 project! This repository contains the codebase for our collaborative e-commerce webpage. The project is designed with a focus on responsive design, modern animations, and best practices for both front-end and back-end development.
 
+## Footer
+
+- https://medium.com/@ryaddev/building-react-footer-components-with-tailwindcss-6f2c5909a9d1
+- npm install react-icons
+- responsive
+
 ## Animated hamburger icons
 
 - https://hamburger-react.netlify.app/

@@ -4,16 +4,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const categories = [
+const category = [
   {
     imgSrc: "https://player.vimeo.com/video/998846572",
-    alt: "HeadPhone",
+    alt: "Headphone",
     isVideo: true,
     isVimeo: true,
   },
   {
     imgSrc: "https://player.vimeo.com/video/998845896",
-    alt: "KeyBoard",
+    alt: "Keyboard",
     isVideo: true,
     isVimeo: true,
   },
@@ -32,6 +32,12 @@ const categories = [
   {
     imgSrc: "https://player.vimeo.com/video/998862113",
     alt: "Case",
+    isVideo: true,
+    isVimeo: true,
+  },
+  {
+    imgSrc: "/assetsForMainPage/TheOthers.jpg",
+    alt: "Others",
     isVideo: true,
     isVimeo: true,
   },
@@ -95,9 +101,8 @@ export default function CategoryCarousel() {
   return (
     <div className="relative">
       <Slider ref={sliderRef} {...settings}>
-        {categories.map((category, index) => (
-
-     <div key={index} className="relative group category_card" onClick={() => navigate(`/${category.alt}`)}>
+        {category.map((category, index) => (
+          <div key={index} className="relative group category_card" onClick={() => navigate(`/category/${category.alt}`)}>
             <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
               {category.isVimeo ? (
                 <iframe
@@ -107,19 +112,9 @@ export default function CategoryCarousel() {
                   allow="autoplay; fullscreen; picture-in-picture"
                 ></iframe>
               ) : category.isVideo ? (
-                <video
-                  src={category.imgSrc}
-                  className="absolute top-0 left-0 w-full h-full object-cover group-hover:blur-sm"
-                  autoPlay
-                  loop
-                  muted
-                />
+                <video src={category.imgSrc} className="absolute top-0 left-0 w-full h-full object-cover group-hover:blur-sm" autoPlay loop muted />
               ) : (
-                <img
-                  src={category.imgSrc}
-                  alt={category.alt}
-                  className="w-full h-auto rounded-lg shadow-lg group-hover:blur-sm"
-                />
+                <img src={category.imgSrc} alt={category.alt} className="w-full h-auto rounded-lg shadow-lg group-hover:blur-sm" />
               )}
             </div>
             <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-white text-xl font-semibold transition-opacity duration-300">
