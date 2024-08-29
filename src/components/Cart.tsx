@@ -1,16 +1,15 @@
 import { useContext } from "react";
 
 import { Link } from "react-router-dom";
-import { MyContext, MycontextType } from "../contextApi/Context";
+import { MyContextType, DataType } from "../types/type";
+import { MyContext } from "../contextApi/Context";
 
 export default function Cart() {
-  const { Show, setShow, Data, Counter, setCounter } = useContext(
-    MyContext
-  ) as MycontextType;
+  const { show, setShow, data, counter, setCounter } = useContext(MyContext) as MyContextType;
 
   const decrement = () => {
-    if (Counter > 1) {
-      setCounter(Counter - 1);
+    if (counter > 1) {
+      setCounter(counter - 1);
     }
   };
 
@@ -27,36 +26,24 @@ export default function Cart() {
             <h2 className="text-white">Home / Cart</h2>
           </Link>
 
-          {Show ? (
-            Data.length > 0 ? (
-              Data.map((item: DataType, index: number) => (
+          {show ? (
+            data.length > 0 ? (
+              data.map((item: DataType, index: number) => (
                 <div key={index} className="flex flex-row mb-4">
-                  <img
-                    className="w-[60px] h-[60px] mr-[16px]"
-                    src={item.img}
-                    alt={item.Name}
-                  />
+                  <img className="w-[60px] h-[60px] mr-[16px]" src={item.img} alt={item.name} />
                   <div className="flex flex-col">
-                    <h2 className="text-white">{item.Name}</h2>
-                    <span>{item.Price}</span>
-                    <h2>Price: {item.Price * Counter}</h2>
+                    <h2 className="text-white">{item.name}</h2>
+                    <span>{item.price}</span>
+                    <h2>Price: {item.price * counter}</h2>
                   </div>
                   <div className="bg-[#F1F1F1] flex justify-center items-center">
-                    <button
-                      onClick={decrement}
-                      className="w-[16px] opacity-25 mr-[21px]"
-                      aria-label="Decrement"
-                    >
+                    <button onClick={decrement} className="w-[16px] opacity-25 mr-[21px]" aria-label="Decrement">
                       -
                     </button>
                     <span className="w-[16px] text-[#000] text-center font-[Manrope] text-[13px] not-italic font-bold leading-[normal] tracking-[1px] uppercase">
-                      {Counter}
+                      {counter}
                     </span>
-                    <button
-                      onClick={() => setCounter(Counter + 1)}
-                      className="w-[16px] opacity-25 ml-[21px] mr-[21px]"
-                      aria-label="Increment"
-                    >
+                    <button onClick={() => setCounter(counter + 1)} className="w-[16px] opacity-25 ml-[21px] mr-[21px]" aria-label="Increment">
                       +
                     </button>
                     <svg
