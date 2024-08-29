@@ -1,4 +1,4 @@
-import * as React from "react";
+// import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Badge from "@mui/material/Badge";
@@ -56,19 +56,15 @@ export default function BackgroundLetterAvatars() {
     if (token) {
       setTokenFound(true); // Token found
       try {
-        const response = await axios.get(
-          "https://ecommerce-api-r62c.onrender.com/dj-rest-auth/user/",
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              "X-CSRFToken": csrfToken,
-            },
-          }
-        );
+        const response = await axios.get("https://ecommerce-api-r62c.onrender.com/dj-rest-auth/user/", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "X-CSRFToken": csrfToken,
+          },
+        });
 
         // Set user data if response is successful
-        const { first_name, last_name, username } =
-          response.data.user || response.data;
+        const { first_name, last_name, username } = response.data.user || response.data;
         setUser({ first_name, last_name, username });
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
@@ -145,11 +141,7 @@ export default function BackgroundLetterAvatars() {
         </svg>
       ) : tokenFound ? (
         <div>
-          <StyledBadge
-            overlap="circular"
-            anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-            variant="dot"
-          >
+          <StyledBadge overlap="circular" anchorOrigin={{ vertical: "bottom", horizontal: "right" }} variant="dot">
             <Avatar
               style={{ width: "25px", height: "25px", cursor: "pointer" }}
               {...stringAvatar(displayName)}
@@ -174,9 +166,7 @@ export default function BackgroundLetterAvatars() {
           <path d="M16 .7C7.563.7.7 7.563.7 16S7.563 31.3 16 31.3 31.3 24.437 31.3 16 24.437.7 16 .7zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1-3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1-3.019 5.491 12.42 12.42 0 0 1 6.452 4.4C23.605 26.816 20.021 28.7 16 28.7z"></path>
         </svg>
       )}
-      {showName && tokenFound && (
-        <span style={{ marginLeft: "10px" }}>{displayName}</span>
-      )}
+      {showName && tokenFound && <span style={{ marginLeft: "10px" }}>{displayName}</span>}
     </Stack>
   );
 }

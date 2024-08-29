@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import brandsData from "../../brands.json"; // Adjust the path if necessary
 import "./TrustedBrandsSlider.css";
 
