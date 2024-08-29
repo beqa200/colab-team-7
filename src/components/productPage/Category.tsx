@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import { useContext } from "react";
 import { MyContext } from "../../contextApi/Context";
 
 export default function Category() {
-  const { selecetedCategory, setselecetedCategory } = useContext(MyContext);
+  const { selecetedCategory, setSelecetedCategory } = useContext(MyContext);
   const category = ["See All", "Mouses", "Keyboard", "Monitors", "Headsets", "PC", "Others"];
   return (
     <>
@@ -20,9 +20,9 @@ export default function Category() {
                     key={index}
                     onClick={() => {
                       if (items === "See All") {
-                        setselecetedCategory(null);
+                        setSelecetedCategory(null);
                       } else {
-                        setselecetedCategory(items);
+                        setSelecetedCategory(items);
                       }
                     }}
                   >
