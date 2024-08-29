@@ -1,9 +1,11 @@
-type DataType = {
-  Name: string;
-  Price: number;
-  Storage: string;
+export interface DataType {
+  id: number;
+  name: string;
+  title: string;
+  price: number;
+  storage: string;
   img: string;
-};
+}
 
 // productData
 export interface Product {
@@ -24,14 +26,18 @@ export interface Product {
   recentlyAdded: boolean;
 }
 
-export interface MycontextType {
-  Show: boolean;
+export type CategoryType = string | null;
+
+export interface MyContextType {
+  show: boolean;
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
-  Counter: number;
+  counter: number;
   setCounter: React.Dispatch<React.SetStateAction<number>>;
-  Data: array;
+  data: DataType[];
   setData: React.Dispatch<React.SetStateAction<DataType[]>>;
   recentlyAdded?: boolean; // Optional property
+  selecetedCategory: CategoryType;
+  setSelecetedCategory: React.Dispatch<React.SetStateAction<CategoryType>>;
 }
 
 // types for static brands.json
@@ -39,8 +45,4 @@ export interface BrandsType {
   name: string;
   image: string;
   url: string;
-}
-interface CategoryType {
-  selecetedCategory: null | string;
-  setselecetedCategory: React.Dispatch<React.SetStateAction<string | null>>;
 }
