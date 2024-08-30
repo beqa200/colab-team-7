@@ -67,3 +67,8 @@ For detailed properties and usage, refer to the link above.
 ## Animation 3D-Rotate
 
 https://www.lundevweb.com/2024/07/animation-3d-rotate-soda-using-css-only.html
+
+## npm installs
+
+- npm install axios
+  import axios from "axios";
