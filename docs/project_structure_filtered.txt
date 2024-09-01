@@ -1,0 +1,131 @@
+--- Folder Structure ---
+[.git]
+    ├── [hooks]
+        └── update.sample
+    ├── index
+    ├── [info]
+        └── exclude
+    ├── [objects]
+        └── [pack]
+            └── pack-46c17349019a777f7a80e4105bdc74546c946e77.rev
+    ├── packed-refs
+    └── [refs]
+        ├── [heads]
+            ├── Category
+            ├── main
+            └── productPage
+        ├── [remotes]
+            └── [origin]
+                ├── Category
+                ├── Dachi
+                ├── HEAD
+                ├── SignupLoginPage
+                ├── SignupSignin
+                ├── main
+                └── productPage
+        ├── stash
+        └── [tags]
+.gitignore
+README.md
+db.json
+[docs]
+    └── .project_structure_filter
+eslint.config.js
+index.html
+package-lock.json
+package.json
+postcss.config.js
+[public]
+    ├── HamburgerSling.png
+    ├── [assets]
+        └── star-2768.svg
+    ├── [assetsForMainPage]
+        ├── 1000_F_230621181_lQYljKe9i1WCRSjqc7t5z8D1evIb46xg.png
+        ├── 1000_F_280086669_eMJpNN2NZFweyd5Xy4wChAhkJEneWq51.jpg
+        ├── 441b7509d792cba6bcc8f150270856be-1.png
+        ├── 441b7509d792cba6bcc8f150270856be.png
+        ├── 62c46dba62c21fc08f67456c417d0ebe.jpg
+        ├── 6f04e2212d5007665792352d75caa6e8.jpg
+        ├── 9925da8c675a130d3bc8c1b4ff9c0451.jpg
+        ├── TheOthers.jpg
+        ├── [audios]
+            └── Orpheus-Male.mp3
+        ├── depositphotos_2204833-stock-illustration-new-red-corner-business-ribbon copy.png
+        ├── ed1fc9901f75b69ea0ca6eefe8a121d1.jpg
+        ├── f5a92a8493d764a6e1de687999dd0878.jpg
+        └── file.png
+    ├── [assetsForProductPage]
+        ├── [3dRotate]
+            └── rock3_.png
+        ├── [brands]
+            └── sony.png
+        ├── [productImages]
+            └── watch_4.jpg
+        └── [slider_3d]
+            └── model.png
+    ├── [assetsForSignupSignin]
+        └── lock-open-solid.svg
+    ├── [images]
+        └── wireless_earbuds_noise_cancellation.jpeg
+    ├── react-burger-menu.png
+    ├── [shared]
+        └── shopping_bag_24dp_999999_FILL0_wght400_GRAD0_opsz24.png
+    └── vite.svg
+[src]
+    ├── App.tsx
+    ├── Layout.tsx
+    ├── brands.json
+    ├── [components]
+        ├── Cart.tsx
+        ├── [categoryPage]
+            └── Categorie.tsx
+        ├── [mainPage]
+            ├── AnimatedText.tsx
+            ├── Avatar 2.tsx
+            ├── Avatar.tsx
+            ├── CategoryCarousel.tsx
+            ├── DiscountedItemsCarousel.tsx
+            ├── DrawerForSearch 2.tsx
+            ├── DrawerForSearch.tsx
+            ├── Header 2.tsx
+            ├── Header.tsx
+            ├── NewItemInStock.tsx
+            ├── RegistrationDemo.tsx
+            ├── SighInDemo 2.tsx
+            ├── SighInDemo.tsx
+            ├── SignIn.css
+            └── SignUp.css
+        └── [productPage]
+            ├── Category 2.tsx
+            ├── Category.tsx
+            ├── D3_Rotate.css
+            ├── D3_Rotate.tsx
+            ├── Footer.tsx
+            ├── GalleryWithPickerZoom.css
+            ├── GalleryWithPickerZoom.tsx
+            ├── NavBar.css
+            ├── NavBar.tsx
+            ├── Slider_3d.css
+            ├── Slider_3d.tsx
+            ├── Stars.tsx
+            ├── TrustedBrandsSlider.css
+            └── TrustedBrandsSlider.tsx
+    ├── [contextApi]
+        └── Context.tsx
+    ├── data.json
+    ├── index.css
+    ├── main.tsx
+    ├── [pages]
+        ├── Category.tsx
+        ├── MainPage.tsx
+        └── product.tsx
+    ├── productData.json
+    ├── react-image-zooom.d.ts
+    ├── [types]
+        └── type.ts
+    └── vite-env.d.ts
+tailwind.config.js
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
