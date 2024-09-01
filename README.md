@@ -68,7 +68,7 @@ The following tools were used in this project:
 - https://medium.com/@ryaddev/building-react-footer-components-with-tailwindcss-6f2c5909a9d1
 - npm install react-icons
 
-  ## Hamburger-React Animated Hamburger Icon
+## <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="30"> Hamburger-React Animated Hamburger Icon
 
 ![Hamburger Menu Example](public/HamburgerSling.png)
 
@@ -127,7 +127,7 @@ https://www.lundevweb.com/2024/07/animation-3d-rotate-soda-using-css-only.html
 - npm install axios
 - import axios from "axios";
 
-## Installation
+## Installation <img src="https://user-images.githubusercontent.com/74038190/212747107-5b654ba5-31c6-4366-b42b-51b822e9bc52.gif" height="40">
 
 ```bash
 git clone https://github.com/beqa200/colab-team-7.git
@@ -156,3 +156,5 @@ UI/UX Designer | Front-End Developer | Back-End Developer
 ### [Sergo Azizbekyan](https://github.com/Pro100Sergosha) - [@Sergo](https://github.com/Pro100Sergosha)
 
 ### [Giorgi Nareklishvili](https://github.com/gionare) - [@gionare](https://github.com/gionare)
+
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
