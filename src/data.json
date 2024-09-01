@@ -62,7 +62,7 @@
       "recentlyAdded": "false"
     },
     {
-      "id": 21,
+      "id": 14,
       "image": "/assetsForProductPage/productImages/RGB-Lights.jpeg",
       "title": "Smart RGB Home Lighting System",
       "rating": 4.8,
@@ -231,7 +231,7 @@
     },
 
     {
-      "id": 13,
+      "id": 11,
       "image": "/assetsForProductPage/productImages/headphones-wireless.jpeg",
       "title": "Premium Black Wireless Headphones",
       "rating": 4.8,
@@ -248,7 +248,7 @@
       "recentlyAdded": "false"
     },
     {
-      "id": 14,
+      "id": 12,
       "image": "/assetsForProductPage/productImages/cooler.jpeg",
       "title": "FrostNova RGB Liquid CPU Cooler",
       "rating": 4.8,
@@ -260,6 +260,128 @@
       "additionalImages": ["/assetsForProductPage/productImages/cooler-1.jpeg", "/assetsForProductPage/productImages/cooler-2.jpeg"],
       "colorOptions": ["Black", "Silver", "Gunmetal"],
       "warranty": "3 years",
+      "deliveryTime": "2-4 business days",
+      "stock": "In Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 13,
+      "image": "/assetsForProductPage/productImages/ultrawide_monitor.png",
+      "title": "Ultrawide Monitor with 144Hz Refresh Rate",
+      "rating": 4.6,
+      "price": "$899",
+      "reviews": 160,
+      "description": "This ultrawide monitor with a 144Hz refresh rate offers a truly immersive experience for gamers and professionals. Enjoy smooth visuals and vibrant colors with its high dynamic range support.",
+      "category": "Monitor",
+      "discount": "799",
+      "additionalImages": [
+        "/assetsForProductPage/productImages/ultrawide_monitor_2.png",
+        "/assetsForProductPage/productImages/ultrawide_monitor_3.png",
+        "/assetsForProductPage/productImages/ultrawide_monitor_4.png"
+      ],
+      "colorOptions": ["Black", "Silver"],
+      "warranty": "2 years",
+      "deliveryTime": "3-5 business days",
+      "stock": "Limited Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 14,
+      "image": "/assetsForProductPage/productImages/Headphones_Canva/1.png",
+      "title": "Gaming Headset with 7.1 Surround Sound",
+      "rating": 4.6,
+      "price": "$149",
+      "reviews": 230,
+      "description": "Take your gaming experience to the next level with this headset featuring 7.1 surround sound, a noise-cancelling microphone, and plush ear cushions for extended comfort during long gaming sessions.",
+      "category": "Headphone",
+      "discount": "122",
+      "additionalImages": ["gaming_headset_2.jpg", "gaming_headset_3.jpg", "gaming_headset_4.jpg"],
+      "colorOptions": ["Black", "Red", "Blue"],
+      "warranty": "1 year",
+      "deliveryTime": "2-4 business days",
+      "stock": "In Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 15,
+      "image": "/assetsForProductPage/productImages/Cooler/1.png",
+      "title": "Advanced AIO CPU Cooler, RGB Lighting",
+      "rating": 4.6,
+      "price": "$159",
+      "reviews": 120,
+      "description": "Keep your CPU cool under pressure with this advanced AIO CPU cooler featuring RGB lighting and high-performance cooling. Designed for gamers and PC builders looking for both aesthetics and efficiency.",
+      "category": "CPU_Cooler",
+      "discount": "130",
+      "additionalImages": [
+        "/assetsForProductPage/productImages/Cooler/2.png",
+        "/assetsForProductPage/productImages/Cooler/3.png",
+        "/assetsForProductPage/productImages/Cooler/4.png"
+      ],
+      "colorOptions": ["Black", "White"],
+      "warranty": "2 years",
+      "deliveryTime": "2-4 business days",
+      "stock": "In Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 16,
+      "image": "/assetsForProductPage/productImages/SSD/1.png",
+      "title": "Ultra-Fast Portable SSD, 1TB",
+      "rating": 4.9,
+      "price": "$199",
+      "reviews": 95,
+      "description": "Experience blazing-fast transfer speeds with this ultra-fast portable SSD offering 1TB of storage. Ideal for photographers, videographers, and anyone needing reliable and speedy data storage on the go.",
+      "category": "Others",
+      "discount": "176",
+      "additionalImages": [
+        "/assetsForProductPage/productImages/SSD/2.png",
+        "/assetsForProductPage/productImages/SSD/3.png",
+        "/assetsForProductPage/productImages/SSD/4.png"
+      ],
+      "colorOptions": ["Black", "Silver"],
+      "warranty": "3 years",
+      "deliveryTime": "2-3 business days",
+      "stock": "In Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 17,
+      "image": "/assetsForProductPage/productImages/Monitor_2/1.png",
+      "title": "4K Ultra HD Monitor, 27-Inch",
+      "rating": 4.8,
+      "price": "$499",
+      "reviews": 140,
+      "description": "Upgrade your display with this 27-inch 4K Ultra HD monitor, offering stunning picture quality and vivid colors. Perfect for professionals and gamers who demand high resolution and clarity.",
+      "category": "Monitor",
+      "discount": "444",
+      "additionalImages": [
+        "/assetsForProductPage/productImages/Monitor_2/2.png",
+        "/assetsForProductPage/productImages/Monitor_2/3.png",
+        "/assetsForProductPage/productImages/Monitor_2/4.png"
+      ],
+      "colorOptions": ["Black"],
+      "warranty": "1 year",
+      "deliveryTime": "3-5 business days",
+      "stock": "In Stock",
+      "recentlyAdded": "false"
+    },
+    {
+      "id": 16,
+      "image": "/assetsForProductPage/productImages/Razer_Keyboard_mouse/1.png",
+      "title": "Razer Silver Metal Keyboard with Mouse",
+      "rating": 4.6,
+      "price": "$249",
+      "reviews": 120,
+      "description": "Elevate your gaming and typing experience with the Razer Silver Metal Keyboard and Mouse combo. This premium set features a sleek silver metal design with customizable RGB lighting and high-performance mechanical switches for the keyboard, and a precision gaming mouse with adjustable DPI settings. Ideal for gamers and professionals seeking both style and functionality.",
+      "category": "Keyboard",
+      "discount": "234",
+      "additionalImages": [
+        "/assetsForProductPage/productImages/Razer_Keyboard_mouse/2.png",
+        "/assetsForProductPage/productImages/Razer_Keyboard_mouse/3.png",
+        "/assetsForProductPage/productImages/Razer_Keyboard_mouse/4.png"
+      ],
+      "colorOptions": ["Silver"],
+      "warranty": "2 years",
       "deliveryTime": "2-4 business days",
       "stock": "In Stock",
       "recentlyAdded": "false"
