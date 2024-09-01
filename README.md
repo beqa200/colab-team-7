@@ -6,7 +6,7 @@
   <!-- <a href="https://ecommerscollab.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Ecommers Collab Team-7</h1>
+<h1 align="center">Ecommers Collab Team-7 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Thumbs%20Up.webp" alt="Thumbs Up" width="25" height="25" /></h1>
 
 ![Version](https://img.shields.io/github/package-json/v/beqa200/colab-team-7)
 ![Languages Count](https://img.shields.io/github/languages/count/beqa200/colab-team-7?color=56BEB8)
@@ -36,7 +36,7 @@
 </h4>
 
 <hr> -->
-
+</br>
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -46,9 +46,7 @@
   <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
 </p>
 
-<br>
-
-## About
+## <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="30"> About
 
 Welcome to the Colab Team 7 project! This repository contains the codebase for our collaborative e-commerce webpage. The project is designed with a focus on responsive design, modern animations, and best practices for both front-end and back-end development.
 
@@ -59,7 +57,7 @@ The following tools were used in this project:
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## backend
+## backend <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/New%20Moon.webp" alt="New Moon" width="25" height="25" />
 
 - https://ecommerce-api-r62c.onrender.com/swagger/
 
@@ -68,7 +66,7 @@ The following tools were used in this project:
 - https://medium.com/@ryaddev/building-react-footer-components-with-tailwindcss-6f2c5909a9d1
 - npm install react-icons
 
-  ## Hamburger-React Animated Hamburger Icon
+## <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="30"> Hamburger-React Animated Hamburger Icon
 
 ![Hamburger Menu Example](public/HamburgerSling.png)
 
@@ -104,7 +102,7 @@ For detailed properties and usage, refer to the link above.
 - https://flowbite.com/docs/components/card/
 - E-commerce card
 
-## accordion (mobile)
+## accordion (mobile) <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Admission%20Tickets.webp" alt="Admission Tickets" width="25" height="25" />
 
 - `npm install @heroicons/react` (for arrows)
 
@@ -112,13 +110,13 @@ For detailed properties and usage, refer to the link above.
 
 - `npm install @mui/material @emotion/react @emotion/styled`
 
-## slider_3d
+## slider_3d <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Travel%20and%20Places/Moai.webp" alt="Moai" width="25" height="25" />
 
 <img src="https://github.com/HoanghoDev/youtube_v2/assets/110652388/1199db3d-ca34-4bb1-bb1b-08b12c1b9995" alt="slider_3D_using_css_only" width="550">
 
 https://github.com/HoanghoDev/youtube_v2/tree/main/slider_3d
 
-## Animation 3D-Rotate
+## Animation 3D-Rotate <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="25" height="25" />
 
 https://www.lundevweb.com/2024/07/animation-3d-rotate-soda-using-css-only.html
 
@@ -127,13 +125,13 @@ https://www.lundevweb.com/2024/07/animation-3d-rotate-soda-using-css-only.html
 - npm install axios
 - import axios from "axios";
 
-## Installation
+## Installation <img src="https://user-images.githubusercontent.com/74038190/212747107-5b654ba5-31c6-4366-b42b-51b822e9bc52.gif" height="40">
 
 ```bash
 git clone https://github.com/beqa200/colab-team-7.git
 ```
 
-## Contributing
+## Contributing <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Cockroach.png" alt="Cockroach" width="25" height="25" />
 
 We welcome contributions from the community! Please follow these steps:
 
@@ -145,7 +143,7 @@ We welcome contributions from the community! Please follow these steps:
 
 ## Authors
 
-UI/UX Designer | Front-End Developer | Back-End Developer
+UI/UX Designer | Front-End Developer | Back-End Developer <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Technologist.webp" alt="Technologist" width="25" height="25" />
 
 ### [Mariam Davitashvili](https://github.com/marriamdd) - [@marriamdd](https://github.com/marriamdd)
 
@@ -156,3 +154,5 @@ UI/UX Designer | Front-End Developer | Back-End Developer
 ### [Sergo Azizbekyan](https://github.com/Pro100Sergosha) - [@Sergo](https://github.com/Pro100Sergosha)
 
 ### [Giorgi Nareklishvili](https://github.com/gionare) - [@gionare](https://github.com/gionare)
+
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
